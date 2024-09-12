@@ -1,0 +1,6 @@
+Abaixo link do estudo de CSS:
+https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started
+Nele você parou em:
+-Introdução ao CSS >>
+   -Estilizando as coisas com base em sua localização em um documento >>
+     -Estilizando as coisas com base no estado.

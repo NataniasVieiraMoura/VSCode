@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    padding:0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:rgb(255, 255, 255);
+}
+.conteiner_log{
+    width: 300px;
+    margin: 100px auto;
+    background-color: #fffa5bd2;
+    padding: 20px;
+    border-radius:5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+.grupo_log{
+    margin-bottom: 20px;
+}
+.grupo_log label{
+    display: block;
+    margin-bottom: 5px;
+}
+.grupo_log input {
+    width: 93%;
+    padding: 10px;
+    border: 1px solid rgb(255,255,255);
+    border-radius: 5px;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(39, 36, 237, 0.58);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button :hover{
+    background-color: rgb(43, 229, 33);
+}

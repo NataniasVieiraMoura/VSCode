@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 2</title>
+</head>
+<body>
+    <h1>Título de Nível 1</h1>
+    <h2>Esse é o index com os modolos do index 5 corrigidos para que funcionem. Uma alteração que faz funcionar é remover o window do seletor.</h2>
+    <p>Activision</p>
+    <p>Tencentgames</p>
+    <div id="msg"></div>
+    <script>
+        document.write(`TEXTO DE TESTE<br>`)
+        document.write(window.charset +`<br>`)
+        document.write(window.appName+`<br>`)
+        document.write(window.URL+`<br>`)
+        var corpo = document.body
+        var p1 = window.document.getElementsByTagName(`p`)[1]
+        corpo.style.backgroud = `black`
+        document.write(`Esta escrito assim : <br>`)
+        p1.style.color = `blue`
+        document.write(p1.innerText+`<br>`)
+        document.write(p1.innerHTML)
+
+        document.write(`<br>`)
+
+        var corpo = document.body
+        var p0 = window.document.getElementsByTagName(`p`)[0]
+        corpo.style.backgroud = `black`
+        document.write(`Esta escrito assim : <br>`)
+        p0.style.color = `red`
+        document.write(p0.innerText + `<br>`)
+        document.write(p0.innerHTML)
+        
+
+        //Selecionando por Id:
+        /*var d = document.getElementById(`msg`)
+        d.style.backgroud = `green`
+        d.innerText = `Estou aguardando...`*/
+
+        //Selecionando por classe:
+        /*
+        var d = document.getElementsByName(`mens`)[0]
+        document.getElementsByClassName()
+        d.innerText = `Olá`
+        */
+
+        //Selecionando por seletor:
+        /*
+        var d = window.document.querySelector(`div#mens`)
+        // # para div id e . para class
+        d.style.color = `blue`
+        */
+
+        //Eventos DOM:
+    </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carregar imagens(exer011)</title>
+</head>
+    <body>
+        <h1>Elemento Picture em HTML</h1>
+        <!--O tratamento de imagens é importante para que ela possa ser visualizada em diferêntes formatos e que o site não fique pesado-->
+        <p><h2>Imagens dinâmicas:</h2> Tente abrir esse site em diferêntes dispositivos ou simplesmente almente ou diminua o tamanho no seu navegador.</p>
+        <picture>
+            <source media="(max-width: 715px)" srcset="Imagens/foto-p.png" type="image/png">
+            <!--A tag picture serve para colocar uma imagem e através da tag
+            source dentro dela você adapta diferentes imagens ao tamanho que ela será visualizada. Usando atributo media para o tamanho minimo de visualização, segudo do atributo srcset para indicar qual imagem deve carregar caso satifeito a condicao de midia e o atributo type para idicar o forma to da imagem-->
+            <!--Você pode usara tributos o max-heigth para videos horizontais-->
+            <!--É importante saber que o atributo media recebe os pixels da imagem, no caso, a imagem media e mais 15px+-50px-->
+            <source media="(max-width: 1015px)" type="Image/png" srcset="Imagens/foto-m.png">
+            <!--Obs.:A ordem das tags source é do source de imagem pequena e depois o source de imagem grande um após o outro. Essa ordem é importante.-->
+            <img src="Imagens/foto-g.png" alt="Imagem flexivel(grande)">
+        </picture>
+        <h2>Audios:</h2>
+        <!--Para usar aldios sem problemas de direitos altorais:
+        Vá ao youtube;
+        no canto inferior esquerdo e click em biblioteca de audio;
+        va na feramenta de "atribuições" e escolha entre fazer atribuições do aldio que vai usar(copia o texto que aparece com link da imagem que escolheu e usa para referênciar o aldio) ou não referênciar onde você não precisa fazer a refência do aldio original.-->
+        <!--Tome cuidado com direito altoral e o tamanho do aldio, imagem ou video-->
+        <p>Aprendendo a reprodizir aldio</p>
+        <ul>
+            <li>
+                <h3>Musica de natal:</h3>
+                <audio src="midia/happy-mistake.mp3" controls altoplay>
+            
+            </li>
+            <li>
+                <h3>Podcast do Guanabara:</h3>
+                <audio src="midia/guanacast-33.mp3" controls autoplay></audio>
+            </li>
+        </ul>
+        <ol start="3" type="A">
+            <li>
+                <table>
+                    <tr>
+                        <h3>Musica de : violão rapda</h3>
+                        <td>
+                            <audio src="midia/forest-lullaby-110624.mp3" controls autoplay></audio>    
+                        </td>
+                    </tr>
+                </table>
+                <p>Referências : <sub>Music by <a href="https://pixabay.com/pt/users/lesfm-22579021/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=110624" rel="nofollow" target="_blank">Oleksii Kaplunskyi</a> from <a href="https://pixabay.com/music//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=110624" rel="nofollow" target="_blank">Pixabay</a></sub></p>
+            </li>
+            <li>
+                <table>
+                    <tr>
+                        <h3>Musica de violão lenta: </h3>
+                        <td>
+                        <audio src="midia/just-relax-11157.mp3" controls autoplay></audio>
+                    </td>
+                    </tr>
+                </table>
+                <p>Referêncais : <sub>Music by <a href="https://pixabay.com/pt/users/lesfm-22579021/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=11157" rel="nofollow" target="_blank">Oleksii Kaplunskyi</a> from <a href="https://pixabay.com/music//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=11157" rel="nofollow" target="_blank">Pixabay</a></sub></p>
+            </li>
+            <li>
+                <table>
+                    <tr>
+                        <h3>Musica Eletronica: </h3>
+                        <td>
+                            <audio src="midia/lifelike-126735.mp3" controls autoplay></audio>
+                        </td>
+                    </tr>
+                </table>
+                <p>Referências : <sub>Music by <a href="https://pixabay.com/pt/users/alexiaction-26977400/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=126735" rel="nofollow" target="_blank">Alexi Action</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=126735" rel="nofollow" target="_blank">Pixabay</a></sub></p>
+            </li>
+        </ol>
+        <!--Compatibilidade com mp3, wav e ogg-->
+        <audio prelaod="metadata" controls autoplay loop>
+            <!--o atributo preload pode receber auto, none ou metadata;
+            no auto o site carrega tudo(pode deixar ele lento);
+            no none o site não carrega nada(não serve nesse caso);
+            no metadata ele carrega algums recursos e outro não(o site não fica pesado).-->
+            <!-- O loop no controls autoplay serve para deixar o video em loop infinito;
+            Videos.wav são videos muito pessados(evite usar).-->
+            <source type="audio/mpeg" src="midia/guanacast-33.mp3" >
+            <source type="audio/ogg" src="midia/guanacast-33.mp3">
+            <source type="audio/wav" src="midia/guanacast-33.mp3">
+        </audio>
+        <p>Caso deseje ver o podcast do Guanabara em uma aba separada<a href="midia/guanacast-33.mp3" hreflang="pt-br" download=""> AQUI</a> o audio.</p>
+        <p>Para inserir videos é necessário saber como fazer, uma vez que essas midias são pesadas e podem deixar o site lento. Você pode usar o site pexels para baixar videos, imagens... .Os arquivos suportados .mp4, .m4v(mkv ou m4v é um formato mais leve que o webm), .webm(formato mais pesado que o mkv), .ogv. Handbrake para edição de videos. Não fiz um exemplo com formato ogg(formato ruim)</p>
+    </body>
+    
+</html>

@@ -1,0 +1,17 @@
+div{
+    background-color: rgb(60, 60, 215);
+    text-align: center;
+    justify-content: space-around;
+
+}
+input{
+    width:100px;
+    color:rgb(10, 10, 150);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    
+}
+body, script, p{
+    font: 30px;
+    
+}

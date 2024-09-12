@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="função.js">
+</head>
+<body>
+    <header>
+        <h1>Analizando numeros</h1>
+    </header>
+    <section>
+        <div>
+            <label for="numero">Numero(entre 1 e 100)</label>
+            <input type="text" id="numero" name="nume">
+            <input type="button" value="Gerar tabuada" onclick="adicionar()">
+        </div>
+        <br>
+        <div>
+            <select name="flista" id="flista" size="10">
+                <option>Digite um valor acima</option>
+            </select>
+        </div>
+        <input type="button" value="Finalizar" onclick="funfinal()">
+        <div id="res"></div>
+    </section>
+    <footer>&copy;nomedaenpresa</footer>
+    <script src="função.js"></script>
+</body>
+</html>

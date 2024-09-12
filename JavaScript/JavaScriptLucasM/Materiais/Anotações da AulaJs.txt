@@ -1,0 +1,31 @@
+Anotações da Aula de JavaScript:
+	Evolução do Js>
+		1970 -> Guerra Fria. Darpa(tecnologias para guerra)
+		Arpanet(Internet).
+		1993-> Timoting Barners Lee. Linguagem HTML,TCPIP e WWW.
+		WWW surgil para estudo núclear de grande quantidade de dados.
+		Navegador Mosaic -> NCSA = Mark Andersen,esse se juntou a Jin Clark e fundaram a NetScape
+		criaram um navegador.
+1995 => Linguagem Moca mudou de nome para java script por causa da fama do java, são linguagem diferentes, 
+baseadas na linguagem C.
+1997 => NetScape procurou pradonizar(ECMA) os codigos e não ser roubada pela Mycrosoft
+2002 => NetScape faliu e fundou uma instituição e crio o navegador
+mozilla firefox.
+2008 => Google Chrome(Usa v8[um codigo livre]) é o mais usado com 50% de usuários de 
+brawsers.
+NodeJs roda java script fora do navegador.
+ECMAscript Evolução:
+Versões:
+1997 = java script 1.0
+1998 = js 2.0
+1999 = js 3.0
+2009 = js ES5
+2015 = js ES6
+ES2016, ES2017, ES2018
+Todas as tecnologias abaixo são em java script fora do brawser:
+jQuery criado pelo grupo mozilla. Angular,Angular1. React(ou native)
+VUE, Electron(para progaramas de interação gráfica.)
+IONIC(nodejs[cordova])
+Criar jogos em java script:
+PHASER, PixiJS, Inpact, melon.js, Craftyjs
+		 

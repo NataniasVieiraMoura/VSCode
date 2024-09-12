@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Serviço Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="scripts (1).js">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Meu Serviço Online</h1>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#testimonials">Depoimentos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <button id="antes" onclick="acao()">Antes</button>
+        <div id="tela"><img src="1.jpg" alt="" width="400px" height="400px"></div>
+        <button id="depois" onclick="menos()">Depois</button>
+    </div>
+    
+    <section id="home">
+        <img src="https://source.unsplash.com/featured/?business,professional" alt="Profissional">
+        <h2>Bem-vindo ao Meu Serviço Online</h2>
+        <p>Apresentando os melhores serviços para você!</p>
+    </section>
+
+    <section id="about">
+        <h2>Sobre</h2>
+        <img src="https://source.unsplash.com/featured/?person,portrait" alt="Sobre Nós">
+        <p>Biografia do profissional.</p>
+        <p>Formação acadêmica e certificações.</p>
+        <p>Experiência profissional.</p>
+    </section>
+
+    <section id="services">
+        <h2>Serviços</h2>
+        <div class="service">
+            <img src="https://source.unsplash.com/featured/?service,consulting" alt="Serviço 1">
+            <h3>Serviço 1</h3>
+            <p>Descrição do Serviço 1.</p>
+        </div>
+        <div class="service">
+            <img src="https://source.unsplash.com/featured/?service,training" alt="Serviço 2">
+            <h3>Serviço 2</h3>
+            <p>Descrição do Serviço 2.</p>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>Depoimentos</h2>
+        <div class="testimonial">
+            <img src="https://source.unsplash.com/featured/?person,smiling" alt="Cliente 1">
+            <p>"Excelente serviço!" - Cliente 1</p>
+        </div>
+        <div class="testimonial">
+            <img src="https://source.unsplash.com/featured/?person,happy" alt="Cliente 2">
+            <p>"Muito profissional!" - Cliente 2</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <form id="contact-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Meu Serviço Online. Todos os direitos reservados.</p>
+    </footer>
+    <script src="scripts (1).js"></script>
+</body>
+</html>

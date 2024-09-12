@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Inserindo videos ospedados localmente</h1>
+    <p>Este video está hospedado no meu própio servidor.</p>
+    <video poster="imagens11/herenyeager.png" width="200" height="400" controls>
+        <source src="videos/heren.mp4" type="video/mp4">
+        <source src="videos/Heren.webm" type="video/webm">
+        <source src="videos/Heren.mkv" type="video/mkv">
+        <source src="videos/Heren - Copia.ogv" type="video/ogg">
+        <p>O seu navegador não tem compatibilidade com a reprodução de videos.</p>
+    </video>
+    <!--O formato .m4v é o mais recomendado.-->
+    <!--A ordem de cada tipo de source importa porque o brawer vai tentar execurtar o video em cada formato de cada source e caso a ordem esteja errada o video não vai ser reproduzido.
+    E caso nenhum formato seja compativel você vai receber o paragrafo que vem logo depois dos source.
+    Para saber a quantidade de comsumo do seus videos e etc por usuários é só multiplicar o tamanho da midia pela media de usuários comsumindo ela.-->
+    <h1>Inserindo videos do youtube:</h1>
+    <!--Para isso você deve clicar em conpartilhar o video e escolher a opção incorporar para copiar o codigo que vai gerar o video.-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=iUrxHSjnpy9WutVZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!--Caso você deseje que os videos no seu site sejam exclusivos use o vimeo. É pago, qualidade do video alta e o buscador é mais obsoleto que o youtube.-->
+    <h1>Inserindo videos do vimeo:</h1>
+    <iframe src="https://player.vimeo.com/video/345626511?h=ec675d3f8e" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <p><a href="https://vimeo.com/345626511">SPACE SHARKS - 2019</a> from <a href="https://vimeo.com/user62548291">Stefan Schumacher</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+</body>
+</html>

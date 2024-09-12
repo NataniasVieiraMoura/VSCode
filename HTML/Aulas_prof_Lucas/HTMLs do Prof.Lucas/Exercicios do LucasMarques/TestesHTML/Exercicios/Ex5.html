@@ -1,0 +1,45 @@
+<!-- Exercício 1: Criando um link que redireciona para a parte superior da página usando âncora -->
+
+
+<!-- Link para a parte superior da página usando âncora -->
+<a href="#topo">Ir para o Topo</a>
+
+<!-- Conteúdo da página... -->
+<h1 id="topo">Topo da Página</h1>
+<p>Este é o conteúdo da página.</p>
+
+A tag <a> é usada para criar um link.
+    O atributo href="#topo" define o destino do link como o elemento com o id="topo", que neste caso é o cabeçalho com o título "Topo da Página".
+    Quando o link é clicado, o navegador rolará a página até o elemento com o ID especificado.
+
+
+<!-- Exercício 2: Criando um botão que exibe um alerta -->
+
+<!-- Botão que exibe um alerta -->
+<button onclick="mostrarAlerta()">Clique para Alerta</button>
+
+<script>
+function mostrarAlerta() {
+    alert("Esta é uma mensagem de exemplo.");
+}
+</script>
+
+A tag <button> é usada para criar um botão.
+    O atributo onclick é usado para associar uma função JavaScript ao evento de clique no botão.
+    A função mostrarAlerta() exibe um alerta com a mensagem especificada quando o botão é clicado.
+
+
+
+<!-- Exercício 3: Inserindo um vídeo com atributos 'controls' e 'src' -->
+
+
+<!-- Vídeo de exemplo -->
+<video controls src="exemplo.mp4">
+    Seu navegador não suporta a reprodução de vídeo.
+</video>
+
+
+A tag <video> é usada para incorporar um elemento de vídeo.
+    O atributo controls adiciona controles de reprodução padrão ao vídeo, como play, pause e barra de progresso.
+    O atributo src especifica a URL do arquivo de vídeo a ser reproduzido (substitua "exemplo.mp4" pelo URL real do vídeo).
+    O conteúdo entre as tags <video> é uma mensagem alternativa que é exibida se o navegador não suporta a reprodução de vídeo ou se o vídeo não pode ser carregado

@@ -1,0 +1,37 @@
+
+body {
+    background-color: rgb(43, 43, 177);
+}
+
+head {
+    color: white;
+    text-align: center;
+}
+section {
+ background-color: rgb(255, 255, 255);
+ border-radius:10px 0px;
+ padding:15px;
+ width: 300px;
+ margin:auto;
+ box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.314);
+}
+footer {
+    color:white;
+    text-align: center;
+    font-size: italic;
+}
+div{
+    text-align: center;
+}
+div#ajuda{
+    /*
+    para chamar uma div especifica usa div + # + o nome do id, no caso "ajuda"
+    */
+    color: blue;
+}
+input#btão{
+    color: rgb(35, 35, 202)
+}
+button{
+    color: blue;
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exemplos de frames</title>
+    </head>
+</html>
+<!--23ª Construa um frameset com dois frames:
+    .á esquerda uma página de links par suas páginas  múltiplas(da questão 12ª)
+    .á direita será carregada inicialmente uma página de introdução, e depois a página clicada no link da esquerda-->
+<frameset cols="25%,*,25%">
+    <frame src="Questão12.html" name="esquerdo">
+        <frameset cols="*"> 
+            <frame src="site_criador.html" name="central">
+        </frameset>
+            <frame src="principal.html" name="direito">
+</frameset>

@@ -1,0 +1,133 @@
+
+form{
+    
+    background-color: #00deb4;
+    background-image: linear-gradient(90deg, #00deb4 0%, #819aff 50%, #ffffff 100%);
+    /*text-align:center;*/
+    /*float: left;*/
+    /*display:grid;*/
+    }
+
+a{
+    color: gray;
+    text-decoration: none;
+}
+button{
+        background-color: #00deb4;
+        background-image: linear-gradient(90deg, #00deb4 0%, #819aff 50%, #ffffff 100%);
+        height: 30px;
+        width: 80px;
+        border-radius: 15%;
+}
+div{
+    /*text-align:center ;*/
+    font-family: Arial, Helvetica, sans-serif;
+        /*top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);*/
+}
+h1{
+    color: rgb(26, 26, 27);
+}
+h3{
+    align-items: center;
+}
+#bookNameSearch{
+    background-color:rgb(229, 238, 224);
+    border:solid 2px #000000;
+    border-radius:10px;
+    width:300px;
+    height:32px;
+    /*float:center;*/
+    padding-left:5px;
+    font-size:18px;
+    border:none;
+
+  }
+  #btnSearch{
+    border: yellowgreen;
+    float:center;
+    height:32px;
+    border-radius:0 7px 7px 0;
+    width:70px;
+    font-weight:bold;
+    background:#5F9EA0;
+  }
+#bookName{
+    background-color:#E0EEEE;
+    border:solid 2px #5F9EA0;
+    border-radius:10px;
+    width:300px;
+    height:32px;
+    /*float:center;*/
+    padding-left:5px;
+    font-size:18px;
+    border:none;
+
+}
+#bookAuthor{
+    background-color:rgb(175, 250, 135);
+    border:solid 2px #ffffff;
+    border-radius:10px;
+    width:300px;
+    height:32px;
+    /*float:center;*/
+    padding-left:5px;
+    font-size:18px;
+    border:none;
+}
+#bookPublisher{
+    background-color:rgb(175, 250, 135);
+    border:solid 2px #ffffff;
+    border-radius:10px;
+    width:300px;
+    height:32px;
+    /*float:center;*/
+    padding-left:5px;
+    font-size:18px;
+    border:none;
+}
+#numberOfPages{
+    background-color:rgb(175, 250, 135);
+    border:solid 2px #ffffff;border-radius:10px;
+    width:300px;
+    height:32px;
+    /*float:center;*/
+    padding-left:5px;
+    font-size:18px;
+    border:none;
+}
+#bookCover{
+    background-color:rgb(175, 250, 135);
+    border:solid 2px #ffffff;border-radius:10px;
+    width:300px;
+    height:32px;
+    /*float:center;*/
+    padding-left:5px;
+    font-size:18px;
+    border:none;
+}
+#synopsis{
+    background-color:rgb(88, 202, 134);
+    border:solid 2px #eae5e5;
+    border-radius:10px;
+    width:300px;
+    height:300px;
+    float:center;   
+    padding-left:5px;
+    font-size:18px;
+    border:none;
+}
+
+#searchInput{
+    /*text-align: center;*/
+    background-color:rgb(175, 250, 135);
+    border:solid 2px #ffffff;border-radius:10px;
+    width:300px;
+    height:32px;
+    /*float:center;*/
+    padding-left:5px;
+    font-size:18px;
+    border:none;
+}
+

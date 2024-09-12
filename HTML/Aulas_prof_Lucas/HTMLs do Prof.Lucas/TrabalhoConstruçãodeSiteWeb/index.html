@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="buscadorfiltrado.js">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.js">
+    <link rel="stylesheet" href="stilopaginação.css">  
+    <link rel="stylesheet" href="bdenavegacao.css">
+  <title>Biblioteca</title>
+</head>
+
+<body>
+
+  <!--<header>Biblioteca Virtual</header>-->
+  <nav> 
+    <ul class="menu">
+        <li><a href="#" target="_self" rel="next"><h1>Categorias de Livros</h1></a>
+            <ul>
+                <li><a href="categoria/categ-aca.html"><h1>Ação</h1></a></li>
+                <li><a href="categoria/categ-ter.html"><h1>Terror</h1></a></li>
+                <li><a href="categoria/categ-ave.html"><h1>Aventura</h1></a></li>
+                <li><a href="categoria/categ-com.html"><h1>Comédia</h1></a></li>
+                <li><a href="categoria/categ-bio.html"><h1>Biografia</h1></a></li>
+                <li><a href="categoria/categ-his.html"><h1>Historico</h1></a></li>
+                <li><a href="categoria/categ-fan.html"><h1>Fanfic</h1></a></li>
+                <li><a href="categoria/categ-aut.html"><h1>Auto-Ajuda</h1></a></li>
+                <li><a href="categoria/categ-cla.html"><h1>Classicos</h1></a></li>
+            </ul>
+        </li>
+            <li><a href="#"><h1>Dicas de livros</h1></a>
+                <ul>
+                    <li><a href="#"><h1>texto1</h1></a></li>
+                    <li><a href="#"><h1>trexto</h1></a></li>
+                    <li><a href="#"><h1>texss</h1></a></li>
+                </ul>
+            </li>
+        <li><a href="#" target="_self" rel="next"><h1>Principais Autores</h1></a></li>
+        <li><a href="promoçãolivros.html" target="_self" rel="next"><h1>Promoções</h1></a></li>
+        <li>
+            <!--<label for="searchInput">Pesquisar: </label>-->
+    <input width="260" type="text" id="searchInput" oninput="searchList()" placeholder="Pesquise livros">
+            <!--
+            <a href="#" target="_self" rel="next"><h1>Pesquisar<img src="imagens ancoras/lupa.png" alt="lupa"></h1></a>
+            -->
+        </li>
+    </ul>
+</nav>
+  <section>
+    <form id="register">
+        <div id="divformulario">
+            <h3>Cadastre um livro</h3>
+            <p>Insira o nome do livro:</p>
+            <label for="bookName"></label>
+            <input type="text" id="searchInput" oninput="searchList()" placeholder="" style="background-color: aqua;">
+            <br>
+            <p>Insira o autor do livro:</p>
+            <label for="bookAuthor"></label>
+            <input type="text" name="bookAuthor" id="bookAuthor">
+            <br>
+            <p>Insira a editora do livro:</p>
+            <label for="bookPublisher"></label>
+            <input type="text" name="bookPublisher" id="bookPublisher">
+            <br>
+            <p>Insira a quantidade de páginas:</p>
+            <label for="numberOfPages"></label>
+            <input type="number" name="numberOfPages" id="numberOfPages">
+            <br>
+            <p>Insira o link da capa:</p>
+            <label for="bookCover"></label>
+            <input type="text" name="bookCover" id="bookCover">
+            <br>
+            <p>Insira a sinopse:</p>
+            <label for="synopsis"></label>
+            <textarea name="synopsis" id="synopsis" cols="50" rows="10"></textarea>
+            <button id="btnRegister">Buscar</button>
+        </div>
+    </form>
+
+    <div id="myModal" class="modal">
+      <div id="contentModel" class="modal-content">
+        <span id="btnCloseModal">&times;</span>
+        <h3 id="modalTitle"></h3>
+        <p id="txtSynopsis"></p>
+      </div>
+    </div>
+    <!--
+    <div id="listOfBooksSearch">
+      <h3>Busque um livro</h3>
+      <label for="bookNameSearch">Digite o livro que deseja procurar:</label>
+      <input type="text" name="bookNameSearch" id="bookNameSearch" placeholder="Buscar...">
+      <button id="btnSearch">Buscar</button>
+      <div id="foundBooks"></div>
+    </div>
+    -->
+    <h1>Lista e Pesquisa</h1>
+
+    <label for="searchInput">Pesquisar: </label>
+    <input type="text" id="searchInput" oninput="searchList()" placeholder="Digite o livro que deseja ler">
+
+    <div id="AllBooks">
+      <h3 id="titleAllBooks">Todos os Livros</h3>
+      <div id="listOfAllBooks">
+        <p  id="emptyBookList">Nenhum livro cadastrado</p>
+      </div>
+    </div>
+</section>
+    <ul id="myList">
+    
+    <a href="livros/a carteira.pdf">
+        <li>Dom Casmurro - Machado de Assis</li>
+    </a>
+    <a href="livros/A Causa Secreta.pdf">
+        <li>Memórias Póstumas de Brás Cubas - Machado de Assis</li>
+    </a>
+    <a href="livros/A Cidade e as Serras, de Eça de Queirós.pdf">
+        <li>Grande Sertão: Veredas - Guimarães Rosa</li>
+    </a>
+    <a href="livros/A ILUSTRE CASA DE RAMIRES.pdf">
+        <li>Gabriela, Cravo e Canela - Jorge Amado</li>
+    </a>
+    <a href="livros/A moreninha.pdf">
+        <li>Capitães da Areia - Jorge Amado</li>
+    </a>
+    <a href="livros/A normalista Adolfo Caminha.pdf">
+        <li>Quincas Borba - Machado de Assis</li>
+    </a>
+    <a href="livros/A PATA DA GAZELA.pdf">
+        <li>Vidas Secas - Graciliano Ramos</li>
+    </a>
+    <a href="livros/A Perfeição.pdf">
+        <li>O Cortiço - Aluísio Azevedo</li>
+    </a>
+    <a href="livros/A Republica.pdf">
+        <li>O Guarani - José de Alencar</li>
+    </a>
+    <a href="livros/A viuvinha.pdf">
+        <li>O Alienista - Machado de Assis</li>
+    </a>
+    <a href="livros/Alma da rua.pdf">
+        <li>Claro Enigma - Carlos Drummond de Andrade</li>
+    </a>
+    <a href="livros/Alma Inquieta, de Olavo Bilac.pdf">
+        <li>Macunaíma - Mário de Andrade</li>
+    </a>
+    <a href="livros/AMARGEMDAHISTORIA.pdf">
+        <li>São Bernardo - Graciliano Ramos</li>
+    </a>
+    <a href="livros/Antologia.pdf">
+        <li>O Auto da Compadecida - Ariano Suassuna</li>
+    </a>
+    <a href="livros/As Jóias da Coroa.pdf">
+        <li>O Quinze - Rachel de Queiroz</li>
+    </a>
+    <a href="livros/bruzundangas.pdf">
+        <li>O Primo Basílio - José Maria de Eça de Queirós</li>
+    </a>
+    <a href="livros/Cancioneiro.pdf">
+        <li>Cidade de Deus - Paulo Lins</li>
+    </a>
+    <a href="livros/CANUDOS E OUTROS TEMAS.pdf">
+        <li>Minha Vida de Menina - Helena Morley</li>
+    </a>
+    <a href="livros/CANÇÃO DO EXÍLIO.pdf">
+        <li>A Hora da Estrela - Clarice Lispector</li>
+    </a>
+    <a href="livros/Carolina, de Casimiro de Abreu.pdf">
+        <li>Tieta do Agreste - Jorge Amado</li>
+    </a>
+    <a href="livros/a carteira.pdf">
+        <li>O Ateneu - Raul Pompeia</li>
+    </a>
+    <a href="livros/A Causa Secreta.pdf">
+        <li>O Pagador de Promessas - Dias Gomes</li>
+    </a>
+    <a href="livros/A Causa Secreta.pdf">
+        <li>O Guarani - José de Alencar</li>
+    </a>
+    <a href="livros/A ILUSTRE CASA DE RAMIRES.pdf">
+        <li>Iracema - José de Alencar</li>
+    </a>
+    <a href="livros/As Jóias da Coroa.pdf">
+        <li>O Seminarista - Bernardo Guimarães</li>
+    </a>
+    <a href="livros/bruzundangas.pdf">
+        <li>Mayombe - Pepetela</li>
+    </a>
+    <a href="livros/Carolina, de Casimiro de Abreu.pdf">
+        <li>Os Sertões - Euclides da Cunha</li>
+    </a>
+    <a href="livros/Contos Fluminenses.pdf">
+        <li>Til - José de Alencar</li>
+    </a>
+    <a href="livros/cincominutos.pdf">
+        <li>O Seminarista - Bernardo Guimarães</li>
+    </a>
+    <a href="livros/document(1).pdf">
+        <li>Capitães da Areia - Jorge Amado</li>
+    </a>
+    <a href="livros/Casa de Pensão, de Aluízio de Azevedo.pdf">
+        <li>O Triste Fim de Policarpo Quaresma - Lima Barreto</li>
+    </a>
+    <a href="livros/Alma da rua.pdf">
+        <li>Terra Sonâmbula - Mia Couto</li>
+    </a>
+    <a href="livros/Contos de Lima Barreto (2).pdf">
+        <li>O Seminarista - Bernardo Guimarães</li>
+    </a>
+    <a href="livros/A Republica.pdf">
+        <li>Capitães da Areia - Jorge Amado</li>
+    </a>
+    <a href="livros/iracema.pdf">
+        <li>O Triste Fim de Policarpo Quaresma - Lima Barreto</li>
+    </a>
+    <a href="livros/Lira dos Vinte Anos.pdf">
+        <li>Terra Sonâmbula - Mia Couto</li>
+    </a>
+    <a href="livros/Histórias sem Data, de Machado de Assis.pdf">
+        <li>Senhora - José de Alencar</li>
+    </a>
+    <a href="livros/Luzia-Homem - Domingos Olímpio Braga Cavalcanti.pdf">
+        <li>O Primo Basílio - José Maria de Eça de Queirós</li>
+    </a>
+    <a href="livros/Eça de Queirós.pdf">
+        <li>O Triste Fim de Policarpo Quaresma - Lima Barreto</li>
+    </a>
+    <a href="livros/a carteira.pdf">
+        <li>Terra Sonâmbula - Mia Couto</li>
+    </a>
+    <a href="livros/A Republica.pdf">
+        <li>Senhora - José de Alencar</li>
+    </a>
+    <a href="livros/cincominutos.pdf">
+        <li>Iracema - José de Alencar</li>
+    </a>
+    <a href="livros/contos_para_velhos.pdf">
+        <li>Tieta do Agreste - Jorge Amado</li>
+    </a>
+    <a href="livros/diva.pdf">
+        <li>O Guarani - José de Alencar</li>
+    </a>
+    <a href="livros/Contos de Lima Barreto (2).pdf">
+        <li>Macunaíma - Mário de Andrade</li>
+    </a>
+    <a href="livros/A Perfeição.pdf">
+        <li>São Bernardo - Graciliano Ramos</li>
+    </a>
+    <a href="livros/Carolina, de Casimiro de Abreu.pdf">
+        <li>O Guarani - José de Alencar</li>
+    </a>
+    <a href="livros/ClariceLispector_WEB24H.pdf">
+        <li>Macunaíma - Mário de Andrade</li>
+    </a>
+    <a href="livros/Alma da rua.pdf">
+        <li>São Bernardo - Graciliano Ramos</li>
+    </a>
+    <a href="livros/Casa de Pensão, de Aluízio de Azevedo.pdf">
+        <li>O Guarani - José de Alencar</li>
+    </a>
+</ul>
+  <script src="/biblioteca.js"></script>
+  <script src="index.js">
+  </script>
+   <!-- Conteúdo da Página -->
+   <h1>Conteúdo da Página</h1>
+   <!-- Adicione o conteúdo da sua página aqui -->
+
+   <!-- Navegação por Páginas -->
+   <div class="pagination" id="pagination">
+       <!-- Os links das páginas serão inseridos aqui dinamicamente via JavaScript -->
+   </div>
+   <script src="javapaginação.js" src="stilopaginação.css">
+   </script>
+</body>
+
+</html>

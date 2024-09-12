@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: silver;
+        }
+        h1{
+            color: red;
+        }
+        h2{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1> Para utilizar o DOM você: <br> 
+    0ª Baixe a extensão como Five sever ou preview on web server;<br>
+    1ª Para utilizar click com o botão direito do mouse e click na opção 'open whith' e escolha o tipo de extenção que vai funcionar o dom. </h1>
+    <h2>O dom serve para visualizar o codigo funcionando emquanto você trabalha nele, assim não é necessário atualizar a página a todo momento.</h2>
+    <h2>Para usar você tambem pode clicar no botão 'go to live' para abrir o five server. E ao terminar de usar clicar na mesma opcão para fechar.</h2>
+    <ol start="3" type="I">
+        <li>Comer</li>
+        <li>Dormir</li>
+        <li>Trabalhar</li>
+    </ol>
+    <h2>Ao mudar de index, você muda automaticamente para a pagina web correspondente.</h2>
+    <p>
+        Dom : Document Object Model
+        window => janela :
+        <ol>
+            <li>Location</li>
+            <li>Document
+                <ol>
+                    <li>
+                    html
+                    <ol>
+                        <li>meta</li>
+                        <li>title</li>
+                    </ol>
+                    </li>
+                    <li>body
+                        <ol>
+                            <li>h1</li>
+                            <li>p</li>
+                            <li>p
+                                <ol>
+                                    <li>strong</li>
+                                </ol>
+                            </li>
+                            <li>div</li>
+
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li>History</li>
+        </ol>
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At distinctio necessitatibus consequuntur sed facilis rerum accusantium corporis modi debitis atque! Harum natus voluptatum illo? Earum necessitatibus optio magni ad sed.,</p>
+    <div id="msg" name="mens">click em min</div>
+    <script>
+        //Selecionando por marca: 
+        //O metodo criue selector é um método mais recente, algums navegadores mais antigos que rodam criue selector mais antigo não vão rodar.
+        window.document.write(window.navegador.charset)
+        window.documennt.write(window.navegator.appName)
+        window.document.write(window.document.URL)
+        var corpo = widow.document.body
+        var p1 = window.document.getElementsByTagName(`p`)[1]
+        corpo.style.backgroud = `black`
+        window.document.write(`Esta escrito assim : ${p1}`)
+        p1.style.color = `blue`
+        document.write(p1.innerText)
+        document.write(p1.innerHTML)
+        /*Selecionando por Id:
+        var d = window.document.getElementById(`msg`)
+        d.style.backgroud = `green`
+        d.innerText = `Estou aguardando...`
+        */
+        //
+        /*var d = window.document.getElementsByName(`mens`)[0]
+        window.document.getElementsByClassName()
+        d.innerText = `Olá`*/
+        
+        //Por seletor:
+        var d = window.document.querySelector(`div#mens`)
+        // # para div id e . para class
+        d.style.color = `blue`
+</script>
+</body>
+</html>

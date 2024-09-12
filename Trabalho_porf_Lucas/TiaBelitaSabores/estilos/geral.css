@@ -1,0 +1,194 @@
+
+body {
+	background: #f9bd1b;
+	font: 0.93em 'Museo300', Arial, sans-serif;
+	color: #a61b1f;
+	text-align: left;
+	line-height: 1.3em;
+}
+#cabecalho:before { /* Inserir conteúdo antes do elemento cabeçalho, o selector :: antes insere conteúdo antes que o conteúdo do elemento selecionado. */
+	content: "O cabeçalho.. "; /* Especifica o conteúdo a ser inserido */
+	width: 100%; /* Largura */
+	height: 50px; /* Altura */
+	position: absolute; /* Posicionado em relação ao primeiro elemento posicionado */ 
+	top: 100px; /* A altura do posicionamento da faixa da cor #a61b1f */
+	left: 0;
+	z-index: -1; /* Especifica a ordem de um elemento, funcionando com o elemento position, fica a frente */
+	background: #a61b1f; /* Cor do fundo */
+}
+
+.largura { /* Largura da página */
+	width: 950px;
+	margin: 0 auto;
+}
+
+#cabecalho address { /* Define as informações */
+	margin-top: 35px; /* Define a margem superior do elemento */
+	float: right; /* Especifica se ou não o elemento deve flutuar */
+	font-size: 0.95em; /* Tamanho da fonte */
+	position: relative; /* O elemento é posicionado em relação à sua posição normal, ou seja, no canto a direita */
+}
+
+#cabecalho address span { /* Agrupa os elementos */
+	padding-left: 10px; /* Define o preenchimento esquerda, o espaço a esquerda do elemento */
+	margin-left: 6px; /* Define a margem esquerda do elemento */
+	border-left: 1px solid #741411; /* Define todas as propriedades da borda esquerda em uma declaração */
+	font-style: normal;
+}
+
+ul#nav  { /* Define uma lista desordenada com marcadores */
+	position: absolute;
+	left: 600px; /* Posição a esquerda */
+	top: 118px;	/* Altura da lista */
+	margin: 0;
+	padding: 0;
+}
+
+ul#nav li { /* Criando as listas */
+	display: inline;	/* Coloca os itens na lista horizontal */
+	margin-right: 10px;	/* Insere um espaço entre cada item da lista */
+	list-style-type: none;  /* Retira o marcador padrão das listas */
+}
+
+ul#nav li  a {
+	color: #fff; /* Texto do link na cor branca */
+	font-size: 17px;
+	font-weight: bold; /* Em negritos */
+	text-decoration: none; /* Retira o sublinado dos links */
+	padding: 15px 15px; /* Insere espaço entre o texto do link e a borda de cada item da lista */
+
+}
+
+ul#nav li a:hover{ /* Efeito, muda a cor ao passar o mouse na lista */
+	text-decoration: none;
+	color: #f20; /* Quase vermelho */
+}
+
+ul#nav2 li { /* Criando a primeira foto do home */
+	list-style-type: none;  /* Retira o marcador padrão das listas */
+	/*border: 9px solid #fff;*/
+	height: 330px;
+}
+
+ul#nav3 li { /* Criando as duas fotos do home */
+	display: inline; /* Coloca os itens na lista horizontal */
+	margin-right: 10px; /* Insere um espaço entre cada item da lista */
+	list-style-type: none; /* Retira o marcador padrão das listas */
+}
+
+#rodape { /* Rodapé das páginas */
+	background: #fff;
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	left: 0;
+	text-align: center;
+}
+
+form#contato label, textarea {display: block;}
+/* Esta regra transforma os elementos em nível de bloco e faz que sejam renderizados um embaixo do outro */
+/* As regras a seguir definem larguras para os campos do formulário */
+form#contato {width: 400px;}
+form#contato input {width: 350px;}
+form#contato input#ddd {width: 30px;}
+form#contato input#fone {width: 200px;}
+form#contato input#enviar {width: auto;}
+form#contato textarea {width: 380px; height: 140px;}
+
+/* <div id:"ddd-fone"> */
+
+form#contato #ddd-fone {width: 254px;}
+form#contato div.um  {float: left;}
+form#contato div.dois  {float: right;}
+
+/* Detalhes de espaçamento entre os campos do formulário */
+
+form#contato label {margin-top: 10px;}			
+/* Insere espaçamento entre todas as linhas do fomulário, exceto para o botão enviar */
+form#contato select {margin-bottom: 25px;}		
+/* Insere espaçamento maior sobre o campo mensagem */
+form#contato input#enviar {margin-top: 10px;}	
+/* Insere espaçamento entre o campo mensagem e o botão enviar */
+div.um, div.dois {margin-bottom: 10px}		
+/* Insere espaçamento abaixo dos elementos flutuantes */
+
+/* Estilização dos elementos fieldset e legend */
+
+form#contato {
+	width: 450px;
+	margin-top: 30px;
+}
+
+form#contato fieldset { /* Desenha uma caixa em torno dos elementos relacionados */
+	padding: 25px 45px;
+	border: none;
+	border-top: 1px solid #fc6;
+	border-left: 1px solid #fc6;
+}
+
+form#contato legend { /* Define uma legenda para o elemento fieldset */
+	padding: 1px 25px;
+	border: 1px 25px;
+}
+
+/* Cores para os textos e tamanho da fonte */
+
+form#contato label  span {color: #f20;} /* define um rótulo para um elemento do label */
+form#contato legend {color: #f20; font-weight: bold;}
+form#contato input, form#contato select, /* Especifica um campo de entrada onde o usuário pode inserir dados, são usados dentro de um elemento <form> para declarar controles de entrada */
+form#contato textarea {border: 1px solid #999;}
+
+dt {
+	margin-bottom: 10px; /* Altura do texto */
+	color: #f60;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+#corpo{ /* Define a cor do corpo do Fale Conosco */
+	background: #fff;
+	padding: 15px;
+	font: 1.01em 'Museo700';
+}
+
+#corpo2{ /* Cardapio */
+	background: #fff;
+	padding: 15px;
+	height: 1100px;
+	font: 0.99em 'Museo700';
+}
+
+#corpo3{ /* Quem somos */
+	background: #fff;
+	padding: 15px;
+	height: 1370px;
+	font: 1.01em 'Museo700';
+}
+
+.cleaar { /* Linha amarela */
+	clear: both;
+	height: 1px;
+	border-top: 1px solid #fc6; /* Inseri um fio amarelo entre as linhas */
+}
+
+dl, dd {
+	margin: 0;
+	padding: 0;
+	width: 870px;
+	text-align: justify;
+}
+
+#principal dl { /* Define uma lista descritiva */
+	width: 195px;
+	float: left;
+	margin-bottom: 7px;
+	color: black;
+	margin-right: 240px;	/* Insere um espaço entre cada item da lista */
+	margin-left: 25px;
+}
+
+#principal h1{
+	font: 2em 'Museo700';
+	color: #a91a1e;
+}
+

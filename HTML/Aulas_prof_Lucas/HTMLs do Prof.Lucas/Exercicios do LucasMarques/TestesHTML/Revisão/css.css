@@ -1,0 +1,17 @@
+.card{
+    background-color: white; 
+    border-radius: 10px;
+    padding: 20px;
+    width: 365px;
+    height: 450px;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(red, green, blue, alpha);
+    
+}
+body{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(209, 210, 211);
+    display: flex
+}

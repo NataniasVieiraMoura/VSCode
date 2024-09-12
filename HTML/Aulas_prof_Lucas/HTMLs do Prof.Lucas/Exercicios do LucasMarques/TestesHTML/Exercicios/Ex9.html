@@ -1,0 +1,79 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Suave</title>
+    <style>
+        /* Estilo para a seção de exemplo */
+        /* section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: lightgray;
+            font-size: 24px;
+        } */
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#secao1">Ir para Seção 1</a></li>
+            <li><a href="#secao2">Ir para Seção 2</a></li>
+        </ul>
+    </nav>
+
+    <section id="secao1">
+        <h1>Seção 1</h1>
+        <p>Esta é a primeira seção.</p>
+    </section>
+
+    <section id="secao2">
+        <h1>Seção 2</h1>
+        <p>Esta é a segunda seção.</p>
+    </section>
+</body>
+</html> -->
+
+
+
+<!-- A tag <a> é usada para criar um link.
+    O atributo href="#secao1" define o destino do link como a seção com o id="secao1", que neste caso é a primeira seção na página.
+    O navegador interpretará essa âncora e rolará suavemente para a seção especificada. -->
+
+
+
+    <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão Mostrar/Ocultar</title>
+    <style>
+        /* Estilo para ocultar inicialmente o parágrafo */
+        p.hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="botao-toggle">Mostrar/Ocultar Parágrafo</button>
+    <p id="paragrafo" class="hidden">Este é um parágrafo que pode ser ocultado.</p>
+
+    <script>
+        const botaoToggle = document.getElementById('botao-toggle');
+        const paragrafo = document.getElementById('paragrafo');
+
+        botaoToggle.addEventListener('click', () => {
+            paragrafo.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
+
+
+<!-- Um botão é criado usando a tag <button>.
+    O parágrafo é criado usando a tag <p>, e inicialmente possui a classe CSS hidden para ocultá-lo.
+    O evento de clique é adicionado ao botão usando o método addEventListener.
+    Quando o botão é clicado, o método classList.toggle() é usado para alternar a classe hidden no parágrafo, fazendo com que ele seja mostrado ou ocultado. -->

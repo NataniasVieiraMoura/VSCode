@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formatações de Titulos</title>
+    <style>
+        mark {
+            background-color:tomato;
+        }
+    </style>
+    <!--aqui você pode mudar o stilo da cor de um marcador mark para outra cor criando um style em um head-->
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito/Destaque</h2>
+    <p>Temos uma frase em negrito<b> Utilizando uma tag chamada b(não semantica)</b></p>
+    <p>Nesse exemplo temos um <strong>termo em destaque chamado de strong</strong></p>
+    <p>seleciona o texto, depois => ctrol+shift+p => digite Enter => nome da tag = > digite Enter</p>
+    <p>Para criar termos <i>em italico utilize o i</i>. Veja como esse texto fica deferente do padrão.(i é não semântico)</p>
+    <em>Agora voçê pode ter frases com significado(com enfaze), ou seja, semântica usando a tag em para italico</em>
+    <!--Evite usar a tag b e i porque ficarão obsoletas, provavelmente-->
+    <h2>texto marcado</h2>
+    <p>Podemos criar tambem<mark style="background-color: blueviolet;"> crir um texto marcado usando</mark> a tag  mark</p>
+    <!--cor é forma, não significado, logo não é possivel mudar a cor da marcação.-->
+    <p>E nesse outro paragrafo temos outro <mark >texto marcado com outra cor agora.</mark> </p>
+    <!--o style mark backgroud-color não altera a cor de marks de outras páginas, apenas padroniza a da página em que foi inserido.-->
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando <big>um texto grande e um texto pequeno</big> <small>nesse paragrafo</small></p>
+    <!-- O big está vermelho porque vai ficar provavelmente em desuso porque é mais razoavel utilizar small por esse ser mais útil.-->
+    <h2>Texto deletado</h2>
+    <p>Podemos criar <del>um texto como excluido</del> para indicar que ele deve ser lido, mas não considerado</p>
+    <h2>Texto inserido</h2>
+    <p> Podemos marcar <ins>um texto como inserido para dar </ins>enfase e indicar que ele foi adicionado depois.</p>
+    <p>Tambem <u>podemos sublinhar um texto com</u> tag u(não semântica[sem sentido])</p>
+    <h2>Sobrescrito</h2>
+    <p>Para escrever coisas do tipo 32<sup>45</sup>-23x em um texto</p>
+    <h2>Texto sub-escrito</h2>
+    <p>Já esse sub escrito é para escrever coisas do tipo N<sub>3</sub>H</p>
+</body>
+</html>

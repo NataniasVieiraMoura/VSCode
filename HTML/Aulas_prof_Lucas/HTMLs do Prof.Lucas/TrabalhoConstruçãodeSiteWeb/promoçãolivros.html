@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações do Livro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0px;
+            padding: 30px;
+            
+        }
+
+        .caixadoproduto {
+            max-width: 300px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .imagemdoproduto img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+
+        .detalhes {
+            text-align: center;
+            margin-top: 0px;
+        }
+    </style>
+</head>
+<body>
+
+        <div class="caixadoproduto">
+            <div class="imagemdorproduto" onclick="abrirpaginalivro()">
+                <a href="https://leitura.com.br/minecraft-guia-de-combate-L999-9786559800537">
+                    <img src="https://leitura.com.br/image/cache/products/9786559800537-200x200.jpg" alt="Minecraft | Guia de combate (Livro oficial ilustrado)">
+                </a>
+            </div>
+            <div class="detanhes">
+                <h4><a href="https://leitura.com.br/minecraft-guia-de-combate-L999-9786559800537">Minecraft | Guia de combate (Livro oficial ilustrado)</a></h4>
+                <p>Torne-se um mestre na arte da batalha! Faça a sua armadura, escolha a sua espada e entre de cabeça n..</p>
+                <p class="price">R$59,90</p>
+            </div>
+        </div>
+ 
+
+        <div class="caixadoproduto">
+            <div class="imagemdorproduto" onclick="abrirpaginalivro()">
+                <a href="https://leitura.com.br/minecraft-guia-de-combate-L999-9786559800537">
+                    <img src="https://leitura.com.br/image/cache/products/9786559800537-200x200.jpg" alt="Minecraft | Guia de combate (Livro oficial ilustrado)">
+                </a>
+            </div>
+            <div class="detanhes">
+                <h4><a href="https://leitura.com.br/minecraft-guia-de-combate-L999-9786559800537">Minecraft | Guia de combate (Livro oficial ilustrado)</a></h4>
+                <p>Torne-se um mestre na arte da batalha! Faça a sua armadura, escolha a sua espada e entre de cabeça n..</p>
+                <p class="price">R$59,90</p>
+            </div>
+        </div>
+
+<script>
+    function abrirpaginalivro() {
+        window.open("https://leitura.com.br/minecraft-guia-de-combate-L999-9786559800537", '_blank');
+    }
+</script>
+
+</body>
+</html>

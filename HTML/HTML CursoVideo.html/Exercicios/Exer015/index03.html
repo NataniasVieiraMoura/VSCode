@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos Css Externos</title>
+    <!--Tudo o que estiver na tag style da tag head vai ser o css aplicado a esse html. Por exemplo o que for definido no h1 vai ser para todas as tags h1.
+    O problema é que o estilo css leva muitas linhas e atrapalha no trabalho.
+    O problema dessa tecnica é que para aplicar a outros html é mais dificil, além das dificuldades de alterar o style.-->
+    <link rel="stylesheet" href="css.css">
+    <!--Para solucionar o problema cria-se um link para o index css e assim no css você edita o estilo para várias páginas html apenas criando um link.
+    Você pode criar mais de um link num mesmo html.-->
+    <style>
+        h1{
+            text-decoration: overline;
+        }
+    </style>
+</head>
+<body>
+    <h3>Na Ordem de prioridade que o html atende o style: <ol>
+        <li>style: Inline(não recomendada para trabalhar e estudar)</li>
+        <li>style: Local(profissionalmente não recomendada, mas recomendada para estudar)</li>
+        <li>style: Externos(recomendada para estudar e trabalhar)</li>
+    </ol></h3>
+    <h2>
+        
+    </h2>
+    <h1>O vermelho nos atributos bgcolor da tag body e font color da tag h1 indica que elas são antigas e estão em desuso.</h1>
+    <p>Estilo Inline é o estilo das tags definidas diretamente na linha da tag desejada. Um trabalho exaustivo e não viável. Pense na quantidade de tags por página e por site e como o estilo vária durante o ano.</p>
+    <h1>Estilos Inline(para cada tag você vai ter de criar um style color e essa forma está errada[para isso você vai ter de criar um index css para redefinir o estilo das tags e o estilo num geral da página.]. Fazer manualmente em cada tag é contra producente e inviável.)</h1>
+    <ul>
+        <li>
+            <h1>Capítulo 1</h1>
+            <h2>Capítulo 1.1</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe placeat illum, dolor delectus eius magni itaque quibusdam, corrupti dolorum quam odio quaerat repellendus aliquam, tenetur reiciendis praesentium ducimus ab ad?</p>
+        </li>
+        <li>
+            <h2>Capítulo 1.2</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur amet nulla nostrum ex omnis. Beatae asperiores impedit quos tempora iure quae neque necessitatibus iusto incidunt excepturi, autem amet nulla totam.</p>
+            <p>1.5em no font-size é referete ao font-size do body 1 vez e meia(0.5).</p>
+        </li>
+        <li>
+            <h1>Capítulo 2</h1>
+            <h2>Capítulo 2.1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nesciunt odit ea libero voluptatibus eaque temporibus animi quis, atque corrupti eveniet expedita? Nihil veniam, ipsum blanditiis exercitationem suscipit voluptatum sed.</p>
+        </li>
+    </ul>
+    <p style="text-align: right;"><a href="pagina02.html" target="_self">Ir para página 2</a></p>
+</body>
+</html>

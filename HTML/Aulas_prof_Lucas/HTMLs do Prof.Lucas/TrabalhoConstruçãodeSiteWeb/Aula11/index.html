@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+    <link rel="stylesheet" href="index2.js">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Sistema de Multas:</h1>
+    <hr>
+    <h2>Identificação :</h2>
+        Nome:
+    <input type="text" nome="nome" id="nome">
+    <!--cria um campo de texto para nome -->
+    <input type="button" value="Adicionar" onclick="nome()">
+    <!--Cria um campo de botão pra clicar. Value é o nome do botão-->
+    <div id="div2"></div>
+    <!--Cria um div para retornar o resultado, ela tem uma id propio para identificação-->
+    Email : 
+    <input type="email" nome="email" id="email" required="email">
+    <input type="button" value="Click" onclick="email()">
+    <div id="divemail"></div>
+    <hr>
+    Velocidade do carro <input type="Number" nome="veloc" id="veloc"> Km/h
+    <input type="Button" value="Verificar" onclick="calcular()">
+    <div id="div1ª"></div>
+    <script>
+        function nome(){
+            var usua = document.querySelector(`input#nome`)
+            var usua = String(usua.value)
+            var divdois = document.querySelector(`div#div2`)
+            divdois.innerHTML = `Seu nome é ${usua}`
+        }
+        function email(){
+            var em = document.getElementById(`email`)
+            var divem = document.querySelector(`div#divemail`)
+            var emai = String(em.value)
+            divem.innerHTML = `Retornando email : ${emai}`
+        }
+        function calcular(){
+        var v = window.document.getElementById(`veloc`)
+        var returne = window.document.querySelector(`div#div1ª`)
+        var ttt = Number(v.value)
+        returne.innerHTML = `Sua velocidade foi de <strong>${ttt}</strong>km/h. `
+        returne.innerHTML += `.Dirija sempre com o cinto de segunrança.`
+        if(ttt >= 72.6){
+                returne.innerHTML += `Você ultrapassou a velocidade permitida de 60 km/h em ${ttt - 72.6} km/h, por favor pague a multa de R$ 500.00 .`
+        }
+    }
+    </script>
+    <hr>
+    <script src="index2.js"></script>
+    <p> Soma:
+        <br>
+        <input type="Number" nome="snum1" id="snum1">+
+        <input type="Number" nome="snum2" id="snum2">
+        <input type="button" value="Somar" onclick="somar()">
+        <div id="rsoma"></div>
+        Subtração:
+        <br>
+        <input type="Number" nome="n1" id="n1">-
+        <input type="Number" nome="n2" id="n2">
+        <input type="button" value="Subtrair" onclick="sub()">
+        <div id="ressub"></div>
+        Divisão:
+        <br>
+        <input type="Number" nome="divn1" id="divn1">/
+        <input type="Number" nome="divn2" id="divn2">
+        <input type="button" value="Dividir" onclick="div()">
+        <div id="rdivis"></div>
+        Multiplicação:
+        <br>
+        <input type="Number" nome="mult1" id="mult1">*
+        <input type="Number" nome="mult2" id="mult2">
+        <input type="button" value="Multiplicar" onclick="mult()">
+        <div id="rmult"></div>
+        
+        Potência da Base:
+        <input type="Number" nome="base" id="base">
+        <br>
+        Espoênte da base:
+        <input type="Number" nome="exp" id="exp">
+        <input type="button" value="Efetuar" onclick="pot()">
+        <div id="rpot"></div>
+        <p>Condições simples e compostas: if, else, else if</p>
+    </p>
+    <hr>
+    <!-- 
+    <script>
+        var k = Number(prompt(`1ª Número:`))
+        var g = Number(prompt(`2ª Número:`))
+    </script>
+    -->
+    <h2>Para usar o console e executar o java script click f8</h2>
+</body>
+</html>

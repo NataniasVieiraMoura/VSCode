@@ -1,0 +1,51 @@
+p,h1{
+    /*Uso de virgula para adicionar tags*/
+    /*Seletor fica entre chaves*/
+    /*Propiedade: 'Valor'; */
+    color:rgb(204, 12, 12);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#sem{
+    list-style-type:none;
+}
+#estilo1{
+    list-style-type:armenian;
+}
+#estilo2{
+    list-style-type:decimal;
+}
+#estilo3{
+    list-style-type: square;
+}
+#estilo4{
+    list-style-type: georgian;
+}
+#estilo5{
+    list-style-type:decimal-leading-zero;
+}
+.forma0{
+    color:greenyellow;
+    font-weight: bold;
+}
+li.comensal,h3.comensal{
+    color:rgb(5, 155, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*combinador descendente:
+    Este seletor selecionará qualquer tag x(elemento) que esteja dentro (descendente de) de uma outra tag y(elemento)*/
+h4 ol li p { 
+    /*Nesse caso: h4 >> ol >> li >> p*/
+    /*Significa que o paragrafo que estiver nesse aninhamento receberá
+    essa formatação.*/
+    color: rgb(172, 0, 172);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+}
+h2 + p{
+    /*Esse seletor vai aplicar as propiedas dele
+    em um paragrafo p que estiver próximo á tag h2*/
+    font-size: large;
+    font-style: oblique;
+    color: white;
+    background-color: black;
+}

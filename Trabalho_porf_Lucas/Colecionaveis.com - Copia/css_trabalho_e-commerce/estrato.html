@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja</title>
+    <style>
+        /* Estilos gerais */
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-image: url(./Imagens/background\ Logo.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Barra superior */
+        .topo {
+            background: rgb(255, 174, 0);
+            height: 237px;
+        }
+
+        .logo {
+            margin-left: 100px;
+            position: relative;
+            z-index: 3;
+        }
+
+        .opcoes a {
+            color: aliceblue;
+            display: flexbox;
+            text-decoration: none;
+            padding: 12px;
+            font-size: 20px;
+            align-items: center;
+            justify-content: baseline;
+        }
+
+        .opcoes :focus {
+            background-color: rgb(255, 174, 0);
+        }
+
+        /* Campo de busca */
+        .busca {
+            margin-left: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* Espaço para a logo */
+        .logo-imagem {
+            margin-left: 100px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="topo">
+        <div class="logo">
+            <img src="caminho/para/sua/logo.png" alt="Logo da loja" class="logo-imagem">
+        </div>
+        <div class="opcoes">
+            <a href="#" class="Produtos">Produtos</a>
+            <a href="#" class="Assinaturas">Assinaturas</a>
+            <a href="#" class="Carrinho">Carrinho</a>
+            <a href="#" class="Sobrenos">Sobre Nós</a>
+            <a href="#" class="Login">Login</a>
+        </div>
+        <input type="text" class="busca" placeholder="Buscar...">
+    </div>
+</body>
+</html>

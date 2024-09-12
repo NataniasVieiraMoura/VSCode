@@ -1,0 +1,18 @@
+Criar um index.html no arquivo já criado X:
+	Vá no code;
+	Clique nas 3 barras superior esquerdo;
+	Click em file;
+	Click em open Folder;
+	Escolha o aquivo X para abrir;
+	Na vertical Lateral procure o icone de maispasta e Click;
+	Crie um index.html;
+Ou digite Ctrl + O
+	Escolha o aquivo X para abrir;
+	Na vertical Lateral procure o icone de maispasta e Click;
+	Crie um index.html;
+ctrl + alt e seta(para cima ou para baixo) => para ter mais de uma barra 
+para escrever ao mesmo tempo. 
+ctrl + alt e setas(left, rigth, up or down) para visualizar duas abas ao mesmo tempo
+alt + tab para mudar de programas
+Aprenda linux para aprender html, css e etc
+shift + tab ou so tab para controlar a identação

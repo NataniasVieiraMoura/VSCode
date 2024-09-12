@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document010</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Para acessar o material do guanabara => <a href="https://github.com/estudonauta/html-css-old/blob/main/PDF-old/10%20-%20Liga%C3%A7%C3%B5es%20em%20toda%20parte.pdf" hreflang="en" target=""><b>link git</b></a>.</p>
+    <!--O atributo target rebe os segintes valores:
+        _blank: vai abrir o link em uma nova janela em branco;
+        _self: vai abri o link na janela ou frame atual;
+        _top(tecnica em desuso):  vai desfazer todos os frames e abrir o destino no navegador completo;
+        _parent(tecnica em desuso): similar ao uso do top em referência a janela mãe nome-do-frame caso esteja usando frames, indica o nome da janela a abrir-->
+        <!--atributo rel serve para indicar a natureza do destino, esse atributo recebe os valores:
+        next: indica que o link é para a proxima parte do documento atual
+        prev: indica que o link é para a parte anterior do documento atual
+        althor: indica que o link é para o site do altor do artigo atual
+        internal: indica que o link é para outro site que não faz parte do site atual.
+        nofollow: indica que o link é para um site não endossado, como um link pago.-->
+
+    <p> Para acessar um link externo numa mesma aba <a href="https://github.com/estudonauta/html-css-old/blob/main/PDF-old/10%20-%20Liga%C3%A7%C3%B5es%20em%20toda%20parte.pdf" hreflang="en" target="_self" rel="external"> CLICK here</a></p>
+    <p>For open a link in the new aba <a href="https://github.com/estudonauta/html-css-old/blob/main/PDF-old/ 10%20-%20Liga%C3%A7%C3%B5es%20em%20toda%20parte.pdf" hreflang="en" target="_blank" rel="prev"><b><mark style="background-color:green"> Select this text </mark></b></a></p>
+    <p>To dowlaod of pdf click <a href="Exer010.1\questões.pdf" download="questões.pdf" type="application/pdf" rel="external"><i> on the blue text. </i></a></p>
+
+    <p>Atributo target com _bank e atributo rel com next<a href="https://github.com/estudonauta/html-css-old/blob/main/PDF-old/ 10%20-%20Liga%C3%A7%C3%B5es%20em%20toda%20parte.pdf" hreflang="en" target="_blank" rel="next"> Test Link here</a></p>
+    <p>Atributo target com _blank e atributo rel com internal<a href="https://github.com/estudonauta/html-css-old/blob/main/PDF-old/ 10%20-%20Liga%C3%A7%C3%B5es%20em%20toda%20parte.pdf" hreflang="en" rel="internal" target="_blank">Link</a></p>
+    <p>Atributo target com _blank e atributo rel com althor<a href="https://github.com/estudonauta/html-css-old/blob/main/PDF-old/ 10%20-%20Liga%C3%A7%C3%B5es%20em%20toda%20parte.pdf" hreflang="en" rel="althor" target="_blank">Link</a></p>
+    <p>Atributo target com _blank e atributo rel com  nofollow<a href="https://github.com/estudonauta/html-css-old/blob/main/PDF-old/ 10%20-%20Liga%C3%A7%C3%B5es%20em%20toda%20parte.pdf" hreflang="en" rel="nofollow" target="_blank">Link</a></p>
+    <p>Atributo target com _blank e atributo rel com external<a href="https://github.com/estudonauta/html-css-old/blob/main/PDF-old/ 10%20-%20Liga%C3%A7%C3%B5es%20em%20toda%20parte.pdf" hreflang="en" rel="external" target="_blank">Link</a></p>
+
+    <p>Atributo target com _self e atributo rel com  next<a href="https://github.com/estudonauta/html-css-old/blob/main/PDF-old/ 10%20-%20Liga%C3%A7%C3%B5es%20em%20toda%20parte.pdf" hreflang="en" target="_self" rel="next">Link</a></p>
+    <p>Atributo target com _self e atributo rel com  prev<a href="https://github.com/estudonauta/html-css-old/blob/main/PDF-old/ 10%20-%20Liga%C3%A7%C3%B5es%20em%20toda%20parte.pdf" hreflang="en" target="_self" rel="prev">Link</a></p>
+    <p>Atributo target com _self e atributo rel com althor<a href="https://github.com/estudonauta/html-css-old/blob/main/PDF-old/ 10%20-%20Liga%C3%A7%C3%B5es%20em%20toda%20parte.pdf" hreflang="en" target="_self" rel="althor">Link</a></p>
+    <p>Atributo target com _self e atributo rel com internal<a href="https://github.com/estudonauta/html-css-old/blob/main/PDF-old/ 10%20-%20Liga%C3%A7%C3%B5es%20em%20toda%20parte.pdf" hreflang="en" target="_self" rel="internal">Link</a></p>
+    <p>Atributo target com _self e atributo rel com external<a href="https://github.com/estudonauta/html-css-old/blob/main/PDF-old/ 10%20-%20Liga%C3%A7%C3%B5es%20em%20toda%20parte.pdf" hreflang="en" target="_self" rel="external">Link</a></p>
+    <p>Atributo target com _self e atributo rel com nofollow<a href="https://github.com/estudonauta/html-css-old/blob/main/PDF-old/ 10%20-%20Liga%C3%A7%C3%B5es%20em%20toda%20parte.pdf" hreflang="en" target="_self" rel="nofollow">Link</a></p>
+
+    <h1>Usando links Internos: </h1>
+    <p>Se você desejar conhecer minha segunda página Click <a href="pag002.html" hreflang="pt" rel="prev">=Here=</a></p>
+    <p>Ele vai fazer a relação com outra pagina que esta dentro do nosso servidor e condiz com nossa pagina</p>
+    <!--No caso abaixo, como o index003 está num arquivo, você  precisa indicar o arquivo em que ele se emcontra para que funcione.-->
+    <p>Você tambem pode acessar a nossa <a href="noticias/index003.html" rel="next">pagina de noticias</a></p>
+
+    <h1>Links para dowlaod</h1>
+    <ul>
+        <li>
+            <a href="Livro/A Republica.pdf" download="A Republica.pdf" type="application/pdf">Baixar livro em .pdf</a>
+        </li>
+        <li>
+            <a href="#">Baixar livro em formato .zip</a>
+        </li>
+    </ul> 
+    
+    </body>
+</html>

@@ -1,0 +1,23 @@
+body, ul{
+    margin: 0px;
+    padding:0%;
+}
+.navbar{
+    background-color:antiquewhite
+    color(#fff, red green blue)
+}
+.navlist{
+    list-style-type:none;
+    justify-content: flex;
+    display:space-around;
+    padding:10% 0;
+}
+.navitem{
+    margin: 0;
+    padding: 0;
+}
+.nav-item a{
+    text-decoration-color:none;
+    color:#fff;
+    font-weight: bold;
+}

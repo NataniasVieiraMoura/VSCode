@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro java-script</title>
+    <style>
+        /*Comentário em css*/
+        body{
+            background-color: blueviolet;
+        }
+        h1{
+            color: thistle;
+        }
+        p{
+            color: aqua;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: medium;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quae culpa, iure doloribus laborum molestiae corrupti dicta, vero incidunt itaque inventore ullam similique totam aliquid, sunt modi delectus in sit.</p>
+    Olá, mundo!
+    <p>Você não programa em html ou css, mas você programa em java-script</p>
+    <script>
+        //var name = window.prompt('What´s your firt name?')
+        //var middlename = window.prompt('What is yourr middle name?')
+        //window.alert('Prazer em te conhercer Sr(a) ' + middlename + " " + name + "!")
+        var um = Number.parseInt(window.prompt("Digite um valor Inteiro: "))
+        var dois = Number.parseInt(window.prompt("Digite um número Inteiro: "))
+        window.alert(um + dois)
+        var pontoum = Number.parseFloat(window.prompt(`Digite um número com decimal: `))
+        var pontodois = Number(window.prompt('Digite um número Racional: '))
+        var soma = pontoum + pontodois
+        window.alert(soma)
+        // Outras funções: variavelx.length --> quantos caracteies o string têm
+        //variavelx.toUpperCase() --> tudo para maiúsculas
+        //variavelx.toLowerCase() --> tudo par minúsculas
+        //Number.parseInt() --> para usar apenas inteiro
+        //parseInt() --> para usar apenas inteiro
+        //Number.parseFloat() --> usar apenas float
+        //parseFloat() --> usar apenas float
+        // O mais adição e comcatena
+        //prompt trata como string
+        //Para dizer que a variavel var é numero use Number() --> para qualquer numero real(racional, intero, decimal...)
+    </script>
+</body>
+</html>

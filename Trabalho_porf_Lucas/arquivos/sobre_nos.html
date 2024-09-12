@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre o Nosso Site</title>
+    <link rel="stylesheet" href="folha_estilo.css">
+    <style>
+        /* Estilos gerais */
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-image: url(./Imagens/background\ Logo.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Barra superior */
+        .topo {
+            background: rgb(255, 174, 0);
+            height: 200px;
+        }
+
+        .logo {
+            margin-left: 100px;
+            position: relative;
+            z-index: 3;
+        }
+
+        .opcoes a {
+            color: aliceblue;
+            display: flexbox;
+            text-decoration: none;
+            padding: 12px;
+            font-size: 20px;
+            align-items: center;
+            justify-content: baseline;
+        }
+
+        .opcoes :focus {
+            background-color: rgb(255, 174, 0);
+        }
+
+        /* Campo de busca */
+        .busca {
+            margin-left: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* Espaço para a logo */
+        .logo-imagem {
+            margin-left: 100px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="topo">
+        <div class="opcoes">
+            <img src="Imagens/Logotipo trabalho.png" width="150px" alt="Logo da loja" class="logo-imagem">
+            <a href="#" class="Produtos">Produtos</a>
+            <a href="#" class="Assinaturas">Assinaturas</a>
+            <a href="#" class="Carrinho">Carrinho</a>
+            <a href="#" class="Sobrenos">Sobre Nós</a>
+            <a href="login.html" class="Login">Login</a>
+            <input type="text" class="busca" placeholder="Buscar...">
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="quem-somos">Quem Somos</h2>
+        <p>Somos uma equipe dedicada que criou este site com o objetivo de fornecer informações relevantes e úteis para nossos visitantes.</p>
+        
+        <h2 class="o-que-oferecemos">O Que Oferecemos</h2>
+        <p>Em nosso site, você encontrará uma variedade de conteúdos, desde artigos informativos até guias práticos, abordando uma ampla gama de tópicos.</p>
+        
+        <h2 class="nossa-missão">Nossa Missão</h2>
+        <p>Nossa missão é tornar a experiência dos nossos usuários o mais agradável e informativa possível, sempre buscando melhorar e expandir nosso conteúdo.</p>
+        
+        <h2 class="contate-nos">Contate-Nos</h2>
+        <p>Se você tiver alguma dúvida, sugestão ou feedback, não hesite em entrar em contato conosco através do nosso formulário de contato.</p>
+    </div>
+</body>
+</html>

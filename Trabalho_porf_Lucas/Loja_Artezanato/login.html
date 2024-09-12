@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Artezanato</title>
+    <link rel="stylesheet" href="index.js">
+    <link rel="stylesheet" href="estilogin.css">
+    <link rel="stylesheet" href="javascript.js">
+</head>
+<body>
+    <div class="entrada">
+        <h2>Login</h2>
+        <form action="home.html" method="post">
+            <div class="area_usu">
+                <p id="mensagem1" style="color: red;"></p>
+                <label>Usuário</label>
+                <input type="text" name="usuario" id="usuario" placeholder="Usuário">
+            </div>
+            <div class="area_local">
+                <p id="mensagem2"></p>
+                <label>Email</label>
+                <input type="email" name="email" id="email" placeholder="Email(@)">
+            </div>
+            <div class="area_pass">
+                <p id="mensagem3"></p>
+                <label>Senha</label>
+                <input type="password" name="senha" id="senha" placeholder="Senha">
+            </div>
+            <div class="area_btn">
+                <button id="butão">Entrar</button>
+            </div>
+            <div class="area_outros">
+                <a href="#">Esqueceu a senha?</a>
+                <a href="#">Cadastre-se</a>
+            </div>
+        </form>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>

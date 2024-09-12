@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM(Events references)</title>
+    <style>
+            div#area{
+                font: normal 20px Arial;
+                background-color: green;
+                width: 400px;
+                height: 400px;
+                line-height: 375px;
+                text-align: center;
+
+            }
+    </style>
+</head>
+<body>
+    <p>É tudo que possa acontecer com qualquer elemento. Exemplo : eventos de mouse na interação com o elemento.No caso a div id area</p>
+    <p>Pode ocorrer esse seis eventos no elemento div pelo usuário com o mouse.
+        <ol>
+        <li>mouseenter : quando o mause entrou na div </li>
+        <li>mousemove : mouse se movendo na div</li>
+        <li>mouseup : quando você clicou no mouse, segurou e ao soltar o botão do mouse ele é ativado</li>
+        <li>mousedown : quando você clica e segura o botão do mouse.</li>
+        <li>click : Click normal</li>
+        <li>mouseout: Quando eu movo o mause para fora do elemento(nesse exemplo : uma div)</li>
+    </ol></p>
+    <h2>Funções:</h2>
+    <p>Comjunto de linhas de cógido que só vão ser executadas somente quando o evento ocorrer.</p>
+    <div id="area" onclick="clicar()">
+        Quadrado.
+    </div>
+    <script>
+        var a = window.document.getElementById(`area`)
+        a.addEventListener(`mouseenter`, entrar)
+        a.addEventListener(`mouseout`,sair)
+        function entrar(){
+            a.innerText = `Entrou`
+            a.style.background=`blue`
+        }
+        function sair(){
+            a.innerText = `Saiu`
+            a.style.background= `gray`
+        }
+        function clicar(){
+            a.innerText = `Clicou!`
+            a.style.background =`red`
+        }
+    </script>
+    <p>Para detectar erros: <ol>
+        <li>Click em opções do teclado</li>
+        <li>Click em imspecionar</li>
+        <li>Ele vai indicar o erro por um simbolo da cor vermelha, na barra superior direito.</li>
+    </ol></p>
+</body>
+</html>

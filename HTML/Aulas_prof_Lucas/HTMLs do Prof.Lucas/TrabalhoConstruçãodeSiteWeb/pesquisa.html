@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.js">
+    <style>
+        a{
+            color: gray;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Lista e Pesquisa</h1>
+
+<label for="searchInput">Pesquisar: </label>
+<input type="text" id="searchInput" oninput="searchList()" placeholder="Digite o livro que deseja ler">
+
+<ul id="myList">
+    
+    <a href="livros/">
+        <li>Dom Casmurro - Machado de Assis</li>
+    </a>
+    <a href="livros/">
+        <li>Memórias Póstumas de Brás Cubas - Machado de Assis</li>
+    </a>
+    <a href="livros/">
+        <li>Grande Sertão: Veredas - Guimarães Rosa</li>
+    </a>
+    <a href="livros/">
+        <li>Gabriela, Cravo e Canela - Jorge Amado</li>
+    </a>
+    <a href="livros/">
+        <li>Capitães da Areia - Jorge Amado</li>
+    </a>
+    <a href="livros/">
+        <li>Quincas Borba - Machado de Assis</li>
+    </a>
+    <a href="">
+        <li>Vidas Secas - Graciliano Ramos</li>
+    </a>
+    <a href="livros/">
+        <li>O Cortiço - Aluísio Azevedo</li>
+    </a>
+    <a href="livros/">
+        <li>O Guarani - José de Alencar</li>
+    </a>
+    <a href="livros/">
+        <li>O Alienista - Machado de Assis</li>
+    </a>
+    <a href="livros/">
+        <li>Claro Enigma - Carlos Drummond de Andrade</li>
+    </a>
+    <a href="">
+        <li>Macunaíma - Mário de Andrade</li>
+    </a>
+    <a href="livros/">
+        <li>São Bernardo - Graciliano Ramos</li>
+    </a>
+    <a href="livros/">
+        <li>O Auto da Compadecida - Ariano Suassuna</li>
+    </a>
+    <a href="livros/">
+        <li>O Quinze - Rachel de Queiroz</li>
+    </a>
+    <a href="livros/">
+        <li>O Primo Basílio - José Maria de Eça de Queirós</li>
+    </a>
+    <a href="livros/">
+        <li>Cidade de Deus - Paulo Lins</li>
+    </a>
+    <a href="livros/">
+        <li>Minha Vida de Menina - Helena Morley</li>
+    </a>
+    <a href="">
+        <li>A Hora da Estrela - Clarice Lispector</li>
+    </a>
+    <a href="">
+        <li>Tieta do Agreste - Jorge Amado</li>
+    </a>
+    <a href="">
+        <li>O Ateneu - Raul Pompeia</li>
+    </a>
+    <a href="livros/">
+        <li>O Pagador de Promessas - Dias Gomes</li>
+    </a>
+    <a href="livros/">
+        <li>O Guarani - José de Alencar</li>
+    </a>
+    <a href="livros/">
+        <li>Iracema - José de Alencar</li>
+    </a>
+    <a href="livros/">
+        <li>O Seminarista - Bernardo Guimarães</li>
+    </a>
+    <a href="livros/">
+        <li>Mayombe - Pepetela</li>
+    </a>
+    <a href="livros/">
+        <li>Os Sertões - Euclides da Cunha</li>
+    </a>
+    <a href="livros/">
+        <li>Til - José de Alencar</li>
+    </a>
+    <a href="livros/">
+        <li>O Seminarista - Bernardo Guimarães</li>
+    </a>
+    <a href="livros/">
+        <li>Capitães da Areia - Jorge Amado</li>
+    </a>
+    <a href="livros/">
+        <li>O Triste Fim de Policarpo Quaresma - Lima Barreto</li>
+    </a>
+    <a href="livros/">
+        <li>Terra Sonâmbula - Mia Couto</li>
+    </a>
+    <a href="livros/">
+        <li>O Seminarista - Bernardo Guimarães</li>
+    </a>
+    <a href="livros/">
+        <li>Capitães da Areia - Jorge Amado</li>
+    </a>
+    <a href="livros/">
+        <li>O Triste Fim de Policarpo Quaresma - Lima Barreto</li>
+    </a>
+    <a href="livros/">
+        <li>Terra Sonâmbula - Mia Couto</li>
+    </a>
+    <a href="livros/">
+        <li>Senhora - José de Alencar</li>
+    </a>
+    <a href="livros/">
+        <li>O Primo Basílio - José Maria de Eça de Queirós</li>
+    </a>
+    <a href="livros/">
+        <li>O Triste Fim de Policarpo Quaresma - Lima Barreto</li>
+    </a>
+    <a href="livros/">
+        <li>Terra Sonâmbula - Mia Couto</li>
+    </a>
+    <a href="livros/">
+        <li>Senhora - José de Alencar</li>
+    </a>
+    <a href="livros/">
+        <li>Iracema - José de Alencar</li>
+    </a>
+    <a href="livros/">
+        <li>Tieta do Agreste - Jorge Amado</li>
+    </a>
+    <a href="livros/">
+        <li>O Guarani - José de Alencar</li>
+    </a>
+    <a href="livros/">
+        <li>Macunaíma - Mário de Andrade</li>
+    </a>
+    <a href="">
+        <li>São Bernardo - Graciliano Ramos</li>
+    </a>
+    <a href="livros/">
+        <li>O Guarani - José de Alencar</li>
+    </a>
+    <a href="livros/">
+        <li>Macunaíma - Mário de Andrade</li>
+    </a>
+    <a href="livros/">
+        <li>São Bernardo - Graciliano Ramos</li>
+    </a>
+    <a href="livros/">
+        <li>O Guarani - José de Alencar</li>
+    </a>
+</ul>
+
+<script src="index.js">
+</script>
+</body>
+</html>

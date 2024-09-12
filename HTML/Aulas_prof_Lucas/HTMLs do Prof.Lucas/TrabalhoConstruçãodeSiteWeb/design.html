@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banners do site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: top;
+            height: 100vh;
+        }
+
+        #caixa-geral {
+            width: 60%;
+            overflow: hidden;
+        }
+
+        #caixa {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .caixa-item {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            outline: none;
+        }
+
+        #voltarButton {
+            position: absolute;
+            top: 15%;
+            left: 225px;
+            transform: translateY(-50%);
+        }
+
+        #irButton {
+            position: absolute;
+            /*top: 50%;
+            right: 10px;*/
+            top: 15%;
+            right: 250px;
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+<body>
+
+<div id="caixa-geral">
+    <button id="voltarButton" onclick="voltarslide()">&#10094;</button>
+    <div id="caixa">
+        <!--&#10094; é o simbolo de voltar-->
+        <!-- Inserir as imagens aqui -->
+        <div class="caixa-item"><img src="banners de livros/Sem título.jpg" alt="Banner 1" width="800" height="186.5"></div>
+        <div class="caixa-item"><img src="banners de livros/imagem2.jpg" alt="Banner 2" width="800" height="186.5"></div>
+        <div class="caixa-item" ><img src="banners de livros/imagem3.jpg" alt="Banner 3" width="800" height="186.5"></div>
+        <div class="caixa-item"><img src="banners de livros/imagem4.jpg" alt="Banner 4" width="800" height="186.5"></div>
+        <div class="caixa-item"><img src="banners de livros/imagem5.jpg" alt="Banner 5" width="800" height="186.5"></div>
+    </div>
+    <button id="irButton" onclick="irslide()">&#10095;</button>
+</div>
+
+<script>
+    let currentIndex = 0;//contador
+
+    function showslide(index) {
+
+        const caixa = document.getElementById('caixa');
+        const itemWidth = document.querySelector('.caixa-item').offsetWidth;
+        const newPosition = -index * itemWidth;
+        caixa.style.transform = `translateX(${newPosition}px)`;
+    }
+
+    function irslide() {
+        //aqui é gerado o numero para a posição da proxima imagem a se exibida quando o usuário selecionar ir
+        //essa função está sob a função showslid()
+        const totalItems = document.querySelectorAll('.caixa-item').length;
+        currentIndex = (currentIndex + 1) % totalItems;
+        showslide(currentIndex);
+    }
+
+    function voltarslide() {
+        //aqui faz a mesma função do anterior, mas para quando o usuário clicar em voltar
+        //essa função está sob a função showslid()
+        const totalItems = document.querySelectorAll('.caixa-item').length;
+        currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+        showslide(currentIndex);
+    }
+</script>
+
+</body>
+</html>

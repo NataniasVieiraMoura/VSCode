@@ -1,0 +1,109 @@
+
+body{
+  background: rgb(0,176,186);
+  background: linear-gradient(90deg, rgba(0,176,186,0.90238093528427) 25%, rgba(167,117,217,1) 100%, rgba(255,0,0,1) 100%); 
+}
+.conteiner {
+    display: flex;
+  }
+.txtcent{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  color: rgb(14, 63, 18);
+  background-color: rgb(169, 141, 196);
+  border-top: 3px solid rgb(132, 0, 255);
+  border-bottom: 3px solid rgb(132, 0, 255);
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+  .conteiner img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    margin: auto;
+    display: block;
+    }
+  .caixa1{
+    width: 30%;
+    background: rgb(255,159,101);
+    background: linear-gradient(90deg, rgba(255,159,101,1) 0%, rgba(255,96,0,1) 50%, rgba(255,152,90,1) 100%); 
+    font-size: 27px;
+    text-align: center;
+    height: 400px;
+    padding: 5px 0px;
+    padding-bottom: 8%;
+    min-width: 40px;
+    display: inline-block;
+    border-radius: 50px;
+    margin-left: 3.5%;
+  }
+  .caixa2{
+    width: 30%;
+    background: rgb(124,124,124);
+    background: linear-gradient(90deg, rgba(124,124,124,1) 0%, rgba(255,255,255,1) 51%, rgba(125,125,125,1) 100%); 
+    font-size: 27px;
+    text-align: center;
+    height: 400px;
+    padding: 5px 0px;
+    padding-bottom: 54%;
+    min-width: 40px;
+    display: inline-block;
+    border-radius: 50px;
+    margin-left: 1%;
+    padding-bottom: 22.5%;
+  }
+  .caixa3{
+    width: 30%;
+    background: rgb(250,255,170);
+    background: linear-gradient(90deg, rgba(250,255,170,1) 0%, rgba(255,218,0,1) 51%, rgba(255,252,138,1) 100%); 
+    font-size: 27px;
+    text-align: center;
+    height: 400px;
+    padding: 5px 0px;
+    min-width: 40px;
+    display: inline-block;
+    border-radius: 50px;
+    margin-left: 1%;
+    padding-bottom: 36.5%;
+  }
+  
+  .conteiner #butão{
+    width: 200px;
+    height: 45px;
+    font-size: 20px;
+   /*aqui foi usado os sites: "css gradiente" e "gradiente buttons"*/
+    background: rgb(36,7,0);
+    background: linear-gradient(45deg, rgba(36,7,0,1) 0%, rgba(121,84,9,1) 65%, rgba(176,160,5,1) 77%, rgba(135,112,8,0.882773092147015) 100%, rgba(0,212,255,1) 100%); 
+    margin: 20px;
+    margin-left: 50%;
+    margin: auto;
+    display: block;
+    border-radius: 25px;
+}
+.conteiner #butão1{
+  width: 200px;
+  height: 45px;
+  font-size: 20px;
+ /*aqui foi usado os sites: "css gradiente" e "gradiente buttons"*/
+  background: rgb(219,0,0);
+  background: linear-gradient(45deg, rgba(219,0,0,1) 0%, rgba(255,105,5,1) 50%, rgba(249,255,0,1) 100%); 
+  margin: 20px;
+  margin-left: 50%;
+  margin: auto;
+  display: block;
+  border-radius: 25px;
+}
+.conteiner #butão2{
+  width: 200px;
+  height: 45px;
+  font-size: 20px;
+ /*aqui foi usado os sites: "css gradiente" e "gradiente buttons"*/
+  background: rgb(0,0,0);
+  background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(156,156,156,1) 50%, rgba(33,33,33,1) 100%); 
+  margin: 20px;
+  margin-left: 50%;
+  margin: auto;
+  display: block;
+  border-radius: 25px;
+}

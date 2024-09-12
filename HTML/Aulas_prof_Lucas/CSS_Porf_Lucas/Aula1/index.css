@@ -1,0 +1,10 @@
+.proto{
+    /*Propriedade: A propriedade é um tipo de atributo de tag HTML. Simplificando, 
+    todos os atributos HTML são convertidos em propriedades CSS. Eles poderiam 
+    ser a cor ou a beira etc*/
+    background-color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    /*background-color,font-family e font-size são exemplos de propiedades;
+      blue, 'Courier New', Courier, monospace' e large são exemplos de valores;*/
+}

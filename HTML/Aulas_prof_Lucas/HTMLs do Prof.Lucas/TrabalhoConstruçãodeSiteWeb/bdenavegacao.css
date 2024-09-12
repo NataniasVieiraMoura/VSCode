@@ -1,0 +1,67 @@
+*{margin: 0; padding: 0;}
+
+body{
+font-family: arial, helvetica, sans-serif;
+font-size: 12px;
+
+}
+h1{
+    
+   font-size: medium;
+    text-transform:uppercase;
+}
+.menu{
+list-style:none;
+border:1px solid #17db48;
+float:center;
+display: flex; /* Transforma a lista em um flex container para a navegação horizontal */
+justify-content: space-around; /* Espaçamento igual entre os itens */
+padding: 5px 0px; /* Espaçamento interno na barra de navegação */
+}
+
+.menu li{
+    /*
+    background: rgb(78,158,191);
+    background: linear-gradient(90deg, rgba(78,158,191,1) 0%, rgba(99,167,204,1) 30%, rgba(33,226,169,1) 48%, rgba(48,126,185,1) 64%, rgba(21,209,87,1) 100%);
+    */
+    background:#c0c0c0;
+    position:relative;
+    float:left;
+    border-right:5px solid #3406be;
+    margin-right: 3px;
+    width: 260px;
+    }
+
+.menu li a{
+    /*barra de opções*/
+    color:#ffffff; text-decoration:none;
+    padding:1px 100px; display:block;}
+    
+.menu li a:hover{
+    /*Opções da barra de opções*/
+    background:#222bd7;
+    color:#6aff00;
+    
+    -moz-box-shadow:0 3px 10px 0 rgb(21, 151, 14);
+    -webkit-box-shadow:0 3px 10px 0 #0f6023;
+    text-shadow:0px 0px 5px #0ea52a;
+}
+.menu li  ul{
+    /*Subopções das opções*/
+    position:absolute;
+    top:50px;/*distancia vertical da barra de subopções*/
+    left:0;
+    background-color:#fff;
+    display:none;
+    height: 50px;
+        
+}
+
+.menu li:hover ul, .menu li.over ul{display:block;}
+
+.menu li ul li{
+    /*Subopções das opções*/
+    border:1px solid #c0c0c0;
+    display:block;
+    width:300px;
+    }

@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    size: 0;
+}
+.cabeça_do_texto{
+    background-color: rgba(34, 0, 255, 0.452);
+    text-align: center;
+}
+td{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+h3{
+    font-size: 0.60cm;
+}
+#imagem{
+    vertical-align: auto;
+}
+#programador{
+    border-radius: 100px;
+}
+.sess{
+    background-color: rgba(0, 255, 255, 0.255);
+}
+.portas{
+    text-align: center;
+    background-color: rgba(71, 86, 255, 0.347);
+}
+#entrar{
+    background-color: rgba(0, 255, 110, 0.621);
+    height: 30px;
+    width: 100px;
+}
+.final{
+    text-align: center;
+    background-color: rgba(55, 55, 55, 0.492);
+}
+.tabell{
+    text-align: center;
+}
+.descri{
+    background-color: rgba(132, 0, 255, 0.471);
+}
+a{
+    color: rgb(9, 77, 133);
+}
+input{
+    height: 0.75cm;
+    background-color: rgba(30, 219, 46, 0.542);
+}

@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+
+	<head>
+		<title>Fale Conosco</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+		<meta http-equiv="content-language" content="pt-br" />
+		<meta name="description" content="Tia Belita Sabores, o melhor lanche da cidade, servindo com amor." />
+		<meta name="keywords" content="Tia Belita Sabores, Lanchonete em Picos PiauÃ­, sucos e salgados, melhor lanche" />
+		<meta name="author" content="Luana Batista" />
+		<link href="estilos/geral.css" rel="stylesheet" type="text/css" media="all" />
+		<link rel="shortcut icon" href="imagens/favicon1.ico" />
+		<!--<script type="text/javascript">
+			function enviarFormulario(p1,p2,p3,p4){
+			if(p1.value != "" && p2.value != "" && p3.value != "" && p4.value != ""){
+					window.alert("Mensagem enviada com sucesso!");
+			}else
+				window.alert("Há campos vazios, verifique-os!");
+			}
+		</script> MESMA FUNÇÃO, PORÉM SEM O &&, POIS DÁ ERRO QUANDO VAI VALIDAR.-->
+		<script type="text/javascript">
+			function enviarFormulario1(p1,p2,p3,p4){
+				if(p1.value == ""){
+						window.alert("Há campos vazios, verifique-os!");
+				}else if(p2.value == ""){
+					window.alert("Há campos vazios, verifique-os!");
+					}else if(p3.value == ""){
+						window.alert("Há campos vazios, verifique-os!");
+						}else if(p4.value == ""){
+							window.alert("Há campos vazios, verifique-os!");
+						}else {
+							window.alert("Mensagem enviada com sucesso!");
+						}
+			}
+		</script>
+	</head>
+	
+	<body id="home">
+		<div class="largura">
+			<div id="cabecalho">
+				<img src="imagens/tiabelita.png" alt="imagem do logo" width="257" height="207"/>			
+					
+				<address>
+					<span> Informações </span>
+					<span> Av. Senador Helvídio Nunes, Picos-PI: 99061238</span>
+				</address>
+				
+				<ul id="nav">
+					<li><a href="index.html" id="in" >home</a></li>	
+					<li><a href="quemsomos.html" id="qs">quem somos</a></li>	
+					<li><a href="cardapio.html" id="ca">cardápio</a></li>	
+					<li><a href="faleconosco.html" id="fc">fale conosco</a></li>
+					<li><a href="galeria.html" id="gl">galeria</a></li>
+				</ul>
+			</div>	
+				<br /><br />
+				<div id="corpo">	
+					<h2>Fale conosco</h2>
+					
+					<dl>
+						<dt>Sede</dt>
+						<dd>Av. Senador Helvídio Nunes, 4207</dd>
+						<dd>Bairro: Junco</dd>
+						<dd>CEP: 64.607-755 - Picos, PI</dd>
+						<dd>Tel: (89) 9906 1238</dd>
+						<dd>Email: tiabelitasabores@hotmail.com</dd>
+					</dl>
+					<br />
+					<div class="cleaar"></div>
+					<br />
+					<form method="post" action="" id="contato">
+					
+						<fieldset>
+						
+							<legend>Contato</legend>
+							
+								<label for="nome">Nome: (<span>*</span>)</label>
+								<input type="text" name="nome" id="nome" />
+								<label for="email">E-mail: (<span>*</span>)</label>
+								<input type="text" name="email" id="email" />
+							<div id="ddd-fone">		
+								<p class="um"> <label for="ddd">DDD:</label>
+									<input type="text" name="ddd" id="ddd" />
+								</p>
+								<p class="dois"> <label for="fone">Fone:</label>
+									<input type="text" name="fone" id="fone" />
+								</p>
+							</div>
+							
+							<label for="assunto">Assunto: (<span>*</span>)</label>
+							<select name="assunto" id="assunto">
+								<option value="">Escolha um assunto</option>
+								<option value="encomenda">Encomenda</option>
+								<option value="reclamacoes">Reclamações</option>
+								<option value="sugestões">Sugestões</option>
+								<option value="outras">Outros</option>
+							</select>
+							
+							<label for="mensagem">Mensagem (<span>*</span>)</label>
+							<textarea name="mensagem" id="mensagem" cols="" rows=""></textarea>
+							<input type="submit" name="enviar" id="enviar" value="Enviar" onclick="enviarFormulario1(nome, email, assunto, mensagem)"/>						
+						</fieldset>
+					</form>
+				</div>
+			
+			<br /><br />
+			<div id="rodape">
+				<br /><small>Copyright &copy; 2014 - Todos os Direitos Reservados | <b>Tia Belita Sabores</b></small>
+				<a href="https://www.facebook.com/pages/Tia-Belita-Sabores/159771630876320?fref=ts" target="_blank"><img src="imagens/facebook02.jpg" width="80" height="20" alt="Facebook" /></a>
+			</div>
+		</div>
+	</body>
+	
+</html>

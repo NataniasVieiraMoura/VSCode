@@ -1,0 +1,37 @@
+    @inport url(inde1x.html);
+body{
+    background-color: blue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    list-style-type: none;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+}
+nav{
+    background: burlywood;
+    color: black;
+}
+ul li{
+    padding: 10%;
+    list-style: none;
+}
+li.houver{
+    background: cornflowerblue;
+    color: blueviolet;
+    cursor: pointer;
+}
+
+
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+ul li{
+    padding: 5px;
+    list-style-type: none;
+}
+li:hover{ 
+            background: green;
+            color: brown;
+            cursor: pointer;
+}

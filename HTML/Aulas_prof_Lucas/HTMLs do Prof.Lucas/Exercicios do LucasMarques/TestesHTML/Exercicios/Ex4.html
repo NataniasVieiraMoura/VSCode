@@ -1,0 +1,68 @@
+<!-- Exercício 1: Criando um formulário de contato com campos para nome, email e mensagem -->
+
+    <form>
+        <!-- Campo de Nome -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        
+        <!-- Campo de Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <!-- Campo de Mensagem -->
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        
+        <!-- Botão de Envio -->
+        <input type="submit" value="Enviar">
+    </form>
+    
+
+
+    A tag <form> é usada para criar um formulário.
+        Cada campo do formulário é criado usando a tag <input> ou <textarea>.
+        O atributo for nos elementos <label> está associando a etiqueta ao seu respectivo campo pelo valor do atributo id do campo correspondente.
+        O atributo type no elemento <input> especifica o tipo de campo (texto, email, etc.).
+        O atributo name é usado para definir o nome do campo, que é enviado para o servidor quando o formulário é enviado.
+        O atributo required indica que o campo é obrigatório e não pode ser deixado em branco.
+
+
+<!-- Exercício 2: Adicionando um campo de seleção para escolher o país -->
+
+<!-- Campo de Seleção para País -->
+<label for="pais">Escolha o seu país:</label>
+<select id="pais" name="pais">
+    <option value="brasil">Brasil</option>
+    <option value="eua">Estados Unidos</option>
+    <option value="canada">Canadá</option>
+    <!-- Adicione mais opções de países conforme necessário -->
+</select>
+
+A tag <select> é usada para criar um campo de seleção.
+    Cada opção dentro do campo de seleção é definida pela tag <option>.
+    O atributo value em cada <option> define o valor que será enviado para o servidor quando essa opção for selecionada.
+    O atributo id é usado para associar a etiqueta ao campo de seleção
+
+
+
+<!-- Exercício 3: Incluindo botões de rádio para selecionar um gênero -->
+
+
+<!-- Conjunto de Botões de Rádio para Gênero -->
+<label>Gênero:</label>
+<input type="radio" id="masculino" name="genero" value="masculino">
+<label for="masculino">Masculino</label>
+
+<input type="radio" id="feminino" name="genero" value="feminino">
+<label for="feminino">Feminino</label>
+
+<input type="radio" id="outro" name="genero" value="outro">
+<label for="outro">Outro</label>
+
+
+Os botões de rádio são criados usando a tag <input> com type="radio".
+O atributo name nos botões de rádio agrupa as opções em um conjunto, permitindo que apenas uma opção seja selecionada dentro desse conjunto.
+O atributo value define o valor que será enviado para o servidor quando a opção for selecionada.
+A tag <label> está associada a cada botão de rádio pelo atributo for, para melhorar a usabilidade (permite clicar na descrição para selecionar o botão).
+Crie mais opções de botões de rádio conforme necessário para representar diferentes gêneros.
+

@@ -1,0 +1,39 @@
+body, ul{
+    text-align: center;
+    font : 20px Normal Arial; 
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    background-color: rgb(43, 72, 145);
+    color: yellow;
+}
+.nav-list{
+    list-style-type:none;
+    display: flex;
+    justify-content: space-around;
+    padding:10px 0px;
+}
+.nav-item{
+    margin: 0px;
+    padding:0px;
+
+}
+.nav-item a{
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.451);
+    font-weight:bold;
+}
+h1{
+    color: aqua;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+div{
+    font: 18px medium;
+    background-color: blue;
+    width: 75px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+
+}

@@ -1,0 +1,75 @@
+body{
+    background: url(imagens/fundo_loja.jpg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-size:cover;
+    justify-content:center;
+    height: 95vh;
+    align-items:center;
+    display:flex;
+}
+label{
+    top:0;
+    color:rgb(0, 100, 33);
+    left:0;
+    transform:translateY(0px);
+    transition: 0.50s ease-in-out;
+    position:absolute;
+}
+
+.area_usu{/*usuário*/
+    position:relative;
+    margin-bottom:13px;
+}
+.area_local{/*email*/
+    margin-bottom:13px;
+    position:relative;
+}
+.area_pass{
+    margin-bottom:13px;
+    position:relative;
+}
+input{
+    width:100%;
+    font-size: medium;
+    height: 50px;
+    background: transparent;
+    border: 5px;
+    outline: none;
+    border-bottom:2px solid rgb(225, 225, 225);
+    color:rgb(0, 0, 0);
+    transition: 1px ease-in-out;
+}
+
+.entrada{/*div do formulário*/
+    background: rgb(124, 203, 218);
+    box-shadow: 2px 2px 10px rgb(49, 114, 255), 2px 5px 20px rgb(0, 0, 0);
+    width: 340px;
+    padding: 50px 20px;
+}
+button{/*botão*/
+    padding: 15px 50px;
+    margin:20px;
+    background:transparent;
+    border:2px solid #fff;
+    color:#fff;
+    text-transform:uppercase;
+    border-radius:20px;
+    cursor:pointer;
+    transition:ease-in-out 0.25s
+}
+.area_btn{/*div do botão*/
+    text-align:center;
+}
+a{/*link*/
+    text-decoration: dashed;
+    color: rgb(28, 88, 83);
+    margin-top: 5px;
+}
+h2{
+    color: rgb(40, 128, 101);
+    text-align: center;
+    margin:20px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+

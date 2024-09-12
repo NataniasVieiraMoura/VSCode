@@ -1,0 +1,62 @@
+<!-- Exercício 1: Criando um formulário de pesquisa com campo de entrada de texto e botão de envio -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pesquisa</title>
+</head>
+<body>
+    <h1>Formulário de Pesquisa</h1>
+    <form action="/resultado" method="get">
+        <label for="pesquisa">Pesquisar:</label>
+        <input type="text" id="pesquisa" name="q" placeholder="Digite sua pesquisa" required>
+        <button type="submit">Pesquisar</button>
+    </form>
+</body>
+</html>
+
+A tag <form> é usada para criar um formulário.
+    O atributo action especifica a URL para onde os dados do formulário serão enviados.
+    O atributo method define o método HTTP usado para enviar os dados. Neste caso, estamos usando o método GET.
+    A tag <label> é usada para rotular o campo de entrada de texto.
+    O atributo for no elemento <label> está associando a etiqueta ao campo de entrada de texto pelo atributo id.
+    O atributo type="text" no elemento <input> cria um campo de entrada de texto.
+    O atributo name é usado para definir o nome do campo, que será enviado para o servidor quando o formulário for submetido.
+    O atributo placeholder fornece um texto de dica dentro do campo.
+    O atributo required indica que o campo é obrigatório e não pode ser deixado em branco.
+    O botão de envio é criado com a tag <button>, e seu tipo padrão é "submit", o que enviará o formulário quando clicado.
+
+
+
+<!-- Exercício 2: Adicionando um campo de senha a um formulário de login -->
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Login</title>
+</head>
+<body>
+    <h1>Formulário de Login</h1>
+    <form action="/autenticar" method="post">
+        <label for="usuario">Usuário:</label>
+        <input type="text" id="usuario" name="usuario" required>
+        
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+        
+        <button type="submit">Entrar</button>
+    </form>
+</body>
+</html>
+
+
+
+Um campo de senha é criado com o atributo type="password" no elemento <input>.
+O atributo name no campo de senha é usado para definir o nome do campo, que será enviado para o servidor quando o formulário for submetido.
+Os demais elementos do formulário são semelhantes ao exemplo anterior, com campos de entrada de texto e um botão de envio.
+

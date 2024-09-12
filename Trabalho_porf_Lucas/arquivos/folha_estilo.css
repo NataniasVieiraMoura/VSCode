@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ff95009a; /* Cor de fundo geral */
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+h1, h2 {
+    color: #333;
+}
+p {
+    line-height: 1.6;
+}
+/* Algumas estilizações estão duplicados */
+/* Adicionando cores para diferentes seções */
+/* Cor de fundo e texto para a seção "Quem Somos" */
+.quem-somos {
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Cor de fundo e texto para a seção "O Que Oferecemos" */
+.o-que-oferecemos {
+    background-color: #e6f7ff;
+    color: #004d99;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Cor de fundo e texto para a seção "Nossa Missão" */
+.nossa-missao {
+    background-color: #e6ffe6;
+    color: #006600;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Cor de fundo e texto para a seção "Contate-Nos" */
+.contate-nos {
+    background-color: #fff0b3;
+    color: #e68a00;
+    padding: 20px;
+    border-radius: 5px;
+}

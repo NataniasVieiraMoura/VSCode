@@ -1,0 +1,25 @@
+
+.perfil_usu{
+    max-width: 300px;
+    text-align: center;
+    margin: 50px auto;
+}
+.redes_s{
+    margin-top: 35px;
+}
+.foto_perf{
+    width: 150px;
+    border: 6px solid #3f8f4a;
+    height: 150px;
+    box-shadow: 0 0 10px rgb(8, 4, 4);
+    margin-bottom: 20px;
+    border-radius:50% ;
+}
+.redes_s a{
+    display:inline-block;
+    margin: 0 10px;
+    transition:trasfornm 0.5 ease;
+}
+.redes_s a:hover{
+    transform: scale(1.4);
+}

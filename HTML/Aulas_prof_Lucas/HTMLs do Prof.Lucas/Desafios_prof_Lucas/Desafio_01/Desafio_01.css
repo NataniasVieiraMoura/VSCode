@@ -1,0 +1,47 @@
+#caixa1{
+    background-color: aqua;
+    font-family: 'Courier New', Courier, monospace;
+}
+#caixa2{
+    background-color: rgba(255, 0, 0, 0.456);
+    font-family: 'Courier New', Courier, monospace;
+}
+#caixa3{
+    background-color: rgba(255, 255, 0, 0.723);
+    font-family: 'Courier New', Courier, monospace;
+}
+#caixa4{
+    background-color: rgba(3, 165, 14, 0.649);
+    font-family: 'Courier New', Courier, monospace;
+}
+#caixa5{
+    background-color: rgba(30, 0, 255, 0.775);
+    font-family: 'Courier New', Courier, monospace;
+}
+#caixa6{
+    background-color: rgba(204, 0, 255, 0.817);
+    font-family: 'Courier New', Courier, monospace;
+}
+#caixa7{
+    background-color: rgba(138, 188, 30, 0.569);
+    font-family: 'Courier New', Courier, monospace;
+}
+#caixa8{
+    background-color: rgba(182, 93, 24, 0.817);
+    font-family: 'Courier New', Courier, monospace;
+}
+#caixa8{
+    background-color: rgba(29, 163, 78, 0.817);
+    font-family: 'Courier New', Courier, monospace;
+}
+#caixa9{
+    background-color: rgba(47, 117, 171, 0.817);
+    font-family: 'Courier New', Courier, monospace;
+}
+#caixa10{
+    background-color: rgba(220, 57, 125, 0.817);
+    font-family: 'Courier New', Courier, monospace;
+}
+/*Chama o input > especifica o tipo > : ação realizada + label{ação que
+o label vai executar}*/
+input[type='checkbox']:checked+label{text-decoration: line-through;}
